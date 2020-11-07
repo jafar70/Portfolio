@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  background-color: $black;
+  padding: 12px 20px 10px;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: .2s background-color ease;
+  transition: .2s background-color ease;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+  }
+
+  &--blue{
+    background-color: $jafar-blue;
+    &:hover {
+      background-color: $jafar-dark-blue;
+    }
+  }
+}

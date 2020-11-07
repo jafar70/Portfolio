@@ -1,0 +1,59 @@
+.gm04 {
+  background-color: $grey;
+
+  .container {
+    border-top: 2px solid $black;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 0;
+
+    &__logo {
+      width: calc(60% - 20px);
+      @media (max-width: $desk-start){
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &__social-media {
+      width: calc(20% - 20px);
+      @media (max-width: $desk-start){
+        width: 100%;
+        text-align: center;
+      }
+      p {
+        margin: 0 0 15px 0;
+      }
+    }
+
+  }
+
+  &__logo {
+    font-family: $logo-font;
+    color: #000;
+    letter-spacing: 6px;
+    line-height: 29px;
+  }
+
+  &__links {
+    font-size: 14px;
+    display: block;
+    color: $black;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    svg {
+      width: 12px;
+      margin-right: 3px;
+      vertical-align: text-top;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.m04 {
+  background-color: $grey;
+  padding: 80px 0;
+  text-align: center;
+
+  @media only screen and (max-width: $desk-start) {
+    padding: 50px 0;
+  }
+
+  &__tag {
+    text-transform: uppercase;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -8px;
+    
+    &__item {
+      width: calc(25% - 16px);
+      margin: 0 8px 16px;
+
+      @media (max-width: $desk-start) {
+        width: calc(33.3% - 16px);
+      }
+
+      @media (max-width: $lap-start) { 
+        width: calc(50% - 16px);
+      }
+    }
+  }
+
+  &__card{
+    transition: all .2s ease;
+    padding: 2.5rem 0;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    min-height: 100px;
+
+    img {
+      max-width: 50px;
+      border-radius: 6px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 1rem;
+      margin: 2rem 0 0;
+      text-align: center;
+    }
+
+    &:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 25px rgba(0,0,0,.4);
+    }
+  }
+}

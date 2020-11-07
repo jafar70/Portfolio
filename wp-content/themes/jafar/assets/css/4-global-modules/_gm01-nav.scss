@@ -1,0 +1,159 @@
+.gm01 {
+	background-color: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+
+	&--transparent{
+		background-color: transparent;
+    box-shadow: none;
+	}
+
+	.mobile-whitespace {
+		display: none;
+		@media screen and (max-width: 800px) {
+			display: block;
+		}
+	}
+
+	&__grid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__logo {
+			cursor: pointer;
+			text-decoration: none;
+
+			h2 {
+				color: $jafar-blue;
+				margin: 7px 0;
+				letter-spacing: 6px;
+				font-size: 2rem;
+				font-family: $logo-font;
+				font-weight: 500;
+			}
+
+			@media screen and (max-width: 800px) {
+				padding: 20px 0;
+			}
+		}
+
+		&__menu {
+			@media screen and (max-width: 800px) {
+				display: none;
+			}
+
+			.nav {
+				&__links {
+					list-style: none;
+					display: flex;
+					margin: 0;
+					padding: 0;
+
+					li {
+						a {
+							transition: color 0.3s ease 0s;
+							padding: 40px 20px;
+							color: $jafar-blue;
+							transition: all 0.3s ease;
+							font-weight: 500;
+							text-decoration: none;
+							display: block;
+
+							&:hover {
+								background-color: $jafar-blue;
+								color: #fff;
+							}
+						}
+
+						&.current_page_item {
+							a {
+								background-color: $jafar-blue;
+								color: #fff;
+							}
+						}
+					}
+					@media only screen and (max-width: 800px) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&__right {
+			&.nav-right {
+				position: relative;
+
+				a {
+					text-decoration: none;
+					transition: all ease 0.2s;
+					@media screen and (max-width: 800px) {
+						display: none;
+					}
+					svg {
+						width: 20px;
+						height: 20px;
+						fill: $jafar-blue;
+						transition: all ease 0.2s;
+					}
+
+					&:hover {
+						svg{
+							fill: $jafar-dark-blue;
+						}
+					}
+
+					&:not(:last-child) {
+						margin-right: 25px;
+					}
+				}
+			}
+		}
+	}
+
+	.hamburger {
+		display: inline-block;
+		cursor: pointer;
+		z-index: 999;
+		margin-top: 0;
+		position: absolute;
+		width: 40px;
+		right: 0;
+		top: 49%;
+		transform: translate(0, -50%);
+		display: none;
+
+		.bar1,
+		.bar2,
+		.bar3 {
+			width: 40px;
+			height: 4px;
+			background-color: $jafar-blue;
+			margin: 7px 0;
+			transition: 0.4s;
+		}
+
+		&.change {
+			.bar1 {
+				transform: rotate(-45deg) translate(-6.5px, 9px);
+				background-color: #fff;
+			}
+
+			.bar2 {
+				opacity: 0;
+			}
+
+			.bar3 {
+				transform: rotate(45deg) translate(-6px, -8px);
+				background-color: #fff;
+			}
+		}
+
+		@media only screen and (max-width: 800px) {
+			display: block;
+		}
+	}
+}

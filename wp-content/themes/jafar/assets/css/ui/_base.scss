@@ -1,0 +1,50 @@
+/// <reference file="../vars" />
+
+
+@if $themes == false {
+	
+	@include headings(1, 6){
+		line-height: 1;
+		font-weight: normal;
+		margin: 0 0 15px;
+		color: $heading-colour;
+	}
+
+	blockquote {
+		text-indent: 0;
+		quotes: none;
+		padding-top: 0;
+		position: relative;
+		font-style: italic;
+		font-size: 30px;
+		font-weight: 200;
+		line-height: 1.4em;
+		
+	
+		&:before, &:after {
+			quotes: "\201C""\201D""\2018""\2019";
+			font-size: 3em;
+			line-height: 0.1em;
+			font-style: normal;
+			display: block;
+			font-family: serif;
+		}
+		&:before { content: open-quote; }
+		&:after { content: close-quote; margin-top: 60px; }
+
+		
+	}
+
+	cite {
+		font-style: normal;
+	}
+    
+    #page-title{
+        margin-top: 100px;
+    }
+
+
+
+} @else {
+	
+}

@@ -1,0 +1,17 @@
+/// <reference file="../vars" />
+
+
+@if $themes == false {
+	
+
+	
+
+} @else {
+	
+	.traffic-light {
+		@include loop-colours(parent) {
+			background-color: $state-colour;
+		}
+	}
+
+}

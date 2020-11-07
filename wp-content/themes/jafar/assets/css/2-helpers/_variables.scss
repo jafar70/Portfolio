@@ -1,0 +1,16 @@
+// Font Family
+$font:       'Raleway', sans-serif;
+$logo-font:  'Poppins', sans-serif;
+
+// Colors
+$white:       #fff;
+$grey:        #ececec;
+$black:       #111;
+$jafar-blue:  #1449e9;
+$jafar-dark-blue: darken($jafar-blue, 25%);
+
+
+// Breakpoints
+$mobile-start:      450px;
+$lap-start:         669px;
+$desk-start:        960px;
