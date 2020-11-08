@@ -35,9 +35,10 @@ $(function () {
     }
   };
   filterList.init();
-}); // $(document).ready(function() {
-// 	$("#filters > li:nth-child(1) > span").addClass('active');
-// });
+});
+$(document).ready(function () {
+  $("#filters > li:nth-child(1) > span").addClass('active');
+});
 // $(document).ready(function() {
 // 	var tabWrapper = $('#tab-block'),
 // 		tabMnu = tabWrapper.find('.tab-mnu  li'),

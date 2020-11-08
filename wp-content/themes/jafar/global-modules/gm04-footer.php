@@ -16,25 +16,25 @@ $twitter_url = get_field('twitter_url', 'option');
       <div class="gm04__grid__social-media">
         <?php if($instagram_url) { ?>
           <a class="gm04__links" href="<?php echo esc_url($instagram_url); ?>" rel="noopener" target="_blank" aria-label="Instagram">
-            <?php echo file_get_contents( get_template_directory() . '/assets/img/instagram.svg' ); ?> <?php echo esc_html('Instagram'); ?>
+            <?php echo file_get_contents( get_template_directory() . '/assets/img/instagram.svg' ); ?><?php echo esc_html('Instagram'); ?>
           </a>
         <?php } ?>
 
         <?php if($github_url) { ?>
           <a class="gm04__links" href="<?php echo esc_url($instagram_url); ?>" rel="noopener"  target="_blank" aria-label="Github">
-            <?php echo file_get_contents( get_template_directory() . '/assets/img/github.svg' ); ?> <?php echo esc_html('Github'); ?>
+            <?php echo file_get_contents( get_template_directory() . '/assets/img/github.svg' ); ?><?php echo esc_html('Github'); ?>
           </a>
         <?php } ?>
 
         <?php if($linkedin_url) { ?>
           <a class="gm04__links" href="<?php echo esc_url($linkedin_url); ?>" rel="noopener" target="_blank" aria-label="LinkedIn">
-            <?php echo file_get_contents( get_template_directory() . '/assets/img/linkedin.svg' ); ?> <?php echo esc_html('LinkedIn'); ?>
+            <?php echo file_get_contents( get_template_directory() . '/assets/img/linkedin.svg' ); ?><?php echo esc_html('LinkedIn'); ?>
           </a>  
         <?php } ?>
 
         <?php if($twitter_url) { ?>
           <a class="gm04__links" href="<?php echo esc_url($twitter_url); ?>" rel="noopener" target="_blank" aria-label="Twitter">
-          <?php echo file_get_contents( get_template_directory() . '/assets/img/twitter.svg' ); ?> <?php echo esc_html('Twitter'); ?>
+          <?php echo file_get_contents( get_template_directory() . '/assets/img/twitter.svg' ); ?><?php echo esc_html('Twitter'); ?>
           </a>
         <?php } ?>  
       </div>

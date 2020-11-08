@@ -164,27 +164,27 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 // Creates Game Reviews Custom Post Type
 function portfolio_init() {
-    $args = array(
-      'name' => 'portfolio',
-'label' => 'Portfolio',
-'singular_label' => 'Portfolio Item',
-'public' => true,  
-'capability_type' => 'post',
-  'show_ui' => true,
-'hierarchical' => false,
-  'menu_icon' => 'dashicons-art',
-      'taxonomies'          => array('topics', 'category' ),
-  'rewrite_withfront' => false ,
-  'rewrite' => true,
+  $args = array(
+    'name' => 'portfolio',
+		'label' => 'Portfolio',
+		'singular_label' => 'Portfolio Item',
+		'public' => true,  
+		'capability_type' => 'post',
+		'show_ui' => true,
+		'hierarchical' => false,
+		'has_archive' => true,
+		'menu_icon' => 'dashicons-art',
+    'taxonomies'          => array('topics', 'category' ),
+  	'rewrite_withfront' => false ,
+  	array('slug' => 'portfolio'),
+      'supports' => array(
+      'title',
+			'revisions',
+			'thumbnail',
+			'page-attributes',)
+  );
   
-        'supports' => array(
-            'title',
-            'revisions',
-            'thumbnail',
-            'page-attributes',)
-        );
-  
-    register_post_type( 'portfolio', $args );
+  register_post_type( 'portfolio', $args );
 }
 add_action( 'init', 'portfolio_init' );
 
@@ -205,4 +205,4 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 add_filter('webpc_htaccess_rules', function($rules, $path) {
 	return '';
-  }, 10, 2);
+}, 10, 2);

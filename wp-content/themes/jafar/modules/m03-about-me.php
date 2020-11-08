@@ -49,7 +49,7 @@ $text = get_field('about_me_text');
             </a>
           <?php } ?>  
         </div>
-        <?php if(get_field('cv_file', 'option')) { ?><a href="<?php echo get_field('cv_file', 'option'); ?>" class="button button--blue" rel="noopener" target="_blank" aria-label="CV">Download CV</a><?php } ?>  
+        <?php if(get_field('cv_file', 'option')) { ?><a href="<?php echo get_field('cv_file', 'option'); ?>" class="button" rel="noopener" target="_blank" aria-label="CV">Download CV</a><?php } ?>  
       </div>
 
     </div>

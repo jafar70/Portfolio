@@ -23,7 +23,7 @@
           $results->the_post();
           $title = get_the_title();
           $img_url = wp_get_attachment_url(get_post_thumbnail_id($post->ID) , 'thumbnail');
-          $alt_text = get_post_meta($post->ID , '_wp_attachment_image_alt', true);
+          $alt_text = get_post_meta(get_post_thumbnail_id($post->ID) , '_wp_attachment_image_alt', true);
           $categories = get_the_category();
           $slugs = wp_list_pluck($categories, 'slug');
           $class_names = join(' ', $slugs);
@@ -57,7 +57,7 @@
       $link_title = $cta_link['title'];
       $link_target = $cta_link['target'] ? $cta_link['target'] : '_self';
       ?>
-      <a class="m02__button button button--blue" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+      <a class="m02__button button" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
     <?php endif; ?>
 
   </div>

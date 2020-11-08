@@ -12,6 +12,6 @@ $(function() {
 	};
 	filterList.init();
 });
-// $(document).ready(function() {
-// 	$("#filters > li:nth-child(1) > span").addClass('active');
-// });
+$(document).ready(function() {
+	$("#filters > li:nth-child(1) > span").addClass('active');
+});
