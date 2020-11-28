@@ -19,17 +19,17 @@
 				padding: 8px 16px;
 				font-size: 16px;
     		font-weight: 600;
-				color: #000;
+				color: $copy;
 				cursor: pointer;
 				transition: all ease 0.3s;
 
 				&:hover {
-					background: #1449e9;
+					background: $black;
 					color: #fff;
 				}
 
 				&.active {
-					background: #1449e9;
+					background: $black;
 					color: #fff;
 				}
 			}
@@ -84,7 +84,7 @@
     }
 
     &__overlay{
-      background-color: rgba($color: $black, $alpha: 0.85);
+      background-color: rgba($color: $copy, $alpha: 0.85);
       position: absolute;
       height: 100%;
       width: 100%;

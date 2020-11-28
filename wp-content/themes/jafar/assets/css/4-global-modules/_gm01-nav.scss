@@ -29,7 +29,7 @@
 			text-decoration: none;
 
 			h2 {
-				color: $black;
+				color: $copy;
 				margin: 7px 0;
 				letter-spacing: 6px;
 				font-size: 2rem;
@@ -58,14 +58,14 @@
 						a {
 							transition: color 0.3s ease 0s;
 							padding: 40px 20px;
-							color: $black;
+							color: $copy;
 							transition: all 0.3s ease;
-							font-weight: 500;
+							font-weight: 600;
 							text-decoration: none;
 							display: block;
 
 							&:hover {
-								background-color: $black;
+								background-color: $copy;
 								color: #fff;
 							}
 						}
@@ -73,7 +73,7 @@
 						&.current_page_item,
 						&.current-menu-item {
 							a {
-								background-color: $black;
+								background-color: $copy;
 								color: #fff;
 							}
 						}
@@ -98,7 +98,7 @@
 					svg {
 						width: 20px;
 						height: 20px;
-						fill: $black;
+						fill: $copy;
 						transition: all ease 0.2s;
 					}
 
@@ -133,7 +133,7 @@
 		.bar3 {
 			width: 40px;
 			height: 4px;
-			background-color: $black;
+			background-color: $copy;
 			margin: 7px 0;
 			transition: 0.4s;
 		}

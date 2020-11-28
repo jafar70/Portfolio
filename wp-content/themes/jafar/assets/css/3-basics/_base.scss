@@ -6,6 +6,7 @@ body {
   font-family: $font;
   margin-top: 98px;
   background-color: $grey;
+  color: $copy;
 
   @media screen and (max-width: 800px){
     margin-top: 86px;
@@ -15,6 +16,10 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  a {
+    color: $copy;
   }
 }
 
@@ -58,7 +63,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 1;
   font-weight: 500;
   margin: 0 0 15px;
-  color: #000
+  color: $copy
 }
 
 .logged-in {
