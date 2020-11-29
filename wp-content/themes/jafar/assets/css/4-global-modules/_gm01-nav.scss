@@ -55,6 +55,14 @@
 					padding: 0;
 
 					li {
+						&.menu-item-object-portfolio {
+							a{
+								#body.single-portfolio & {
+									background-color: $copy;
+									color: #fff;
+								}
+							}
+						}
 						a {
 							transition: color 0.3s ease 0s;
 							padding: 40px 20px;

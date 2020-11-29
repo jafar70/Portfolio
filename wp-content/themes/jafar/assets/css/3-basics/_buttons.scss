@@ -1,14 +1,13 @@
 .button {
   display: inline-block;
   background-color: $copy;
-  padding: 12px 20px 10px;
+  padding: 14px 20px 12px;
   color: #fff;
   text-transform: uppercase;
   -webkit-transition: .2s background-color ease;
   transition: .2s background-color ease;
   font-size: 13px;
-  font-weight: 600;
-  border-radius: 4px;
+  font-weight: 700;
   border: none;
   cursor: pointer;
   text-decoration: none;
@@ -22,5 +21,10 @@
     &:hover {
       background-color: $jafar-dark-blue;
     }
+  }
+
+  &--disabled {
+    opacity: .5;
+    cursor: no-drop;
   }
 }

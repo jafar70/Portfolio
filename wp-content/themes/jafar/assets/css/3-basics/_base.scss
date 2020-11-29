@@ -4,9 +4,10 @@ html{
 
 body {
   font-family: $font;
-  margin-top: 98px;
+  margin-top: 104px;
   background-color: $grey;
   color: $copy;
+  line-height: 1.5;
 
   @media screen and (max-width: 800px){
     margin-top: 86px;
