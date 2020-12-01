@@ -66,7 +66,7 @@ $cv_url        = get_field( 'cv_file', 'option' );
 				</div>
 				<?php if ( $cv_url ) { ?>
 					<a href="<?php echo esc_url( $cv_url ); ?>" class="button" rel="noopener" target="_blank" aria-label="CV">
-						<?php echo esc_url( 'Download CV' ); ?>
+						<?php echo esc_html( 'Download CV' ); ?>
 					</a>
 				<?php } ?>  
 			</div>

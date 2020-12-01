@@ -51,13 +51,13 @@
 					<div class="m05__grid__item 
 					<?php
 					if ( $class_names ) {
-						echo ' ' . esc_url( $class_names );
+						echo ' ' . esc_html( $class_names );
 					}
 					?>
 					" data-cat="
 					<?php
 					if ( $class_names ) {
-						echo ' ' . esc_url( $class_names );
+						echo ' ' . esc_html( $class_names );
 					}
 					?>
 					">
