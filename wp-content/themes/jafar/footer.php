@@ -11,13 +11,12 @@
 
 ?>
 
-  </main>
-  
-  <?php get_template_part( 'global-modules/gm04', 'footer' ); ?>
+</main>
 
-  
-  <?php wp_footer(); ?>
+<?php get_template_part( 'global-modules/gm04', 'footer' ); ?>
 
-  </body>
+<?php wp_footer(); ?>
 
-  </html>
+</body>
+
+</html>

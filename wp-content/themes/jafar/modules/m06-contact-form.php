@@ -1,7 +1,16 @@
 <?php
-$heading = get_field('m05_title');
-$subtext = get_field('m05_subtext');
-$form_id = get_field('m05_form_id');
+/**
+ * Block: M06 - Contact Form
+ *
+ * @used:
+ *  - page-contact.php
+ *
+ * @package Jafar
+ */
+
+$heading = get_field( 'm05_title' );
+$subtext = get_field( 'm05_subtext' );
+$form_id = get_field( 'm05_form_id' );
 ?>
 
 <div class="m06">
@@ -16,7 +25,7 @@ $form_id = get_field('m05_form_id');
 
 			</div>
 			<div class="m06__grid__form">
-			  <?php echo do_shortcode('[gravityform id="' . $form_id . '" title="false" description="false" ajax="true"]'); ?>
+				<?php echo do_shortcode( '[gravityform id="' . $form_id . '" title="false" description="false" ajax="true"]' ); ?>
 			</div>
 		</div>
 

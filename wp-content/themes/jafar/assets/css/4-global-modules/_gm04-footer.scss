@@ -13,7 +13,7 @@
 
     &__logo {
       width: calc(60% - 20px);
-      @media (max-width: $desk-start){
+      @media (max-width: $desk-start) {
         width: 100%;
         text-align: center;
       }
@@ -21,7 +21,7 @@
 
     &__social-media {
       width: calc(20% - 20px);
-      @media (max-width: $desk-start){
+      @media (max-width: $desk-start) {
         width: 100%;
         text-align: center;
       }
@@ -31,7 +31,6 @@
         font-weight: 600;
       }
     }
-
   }
 
   &__logo {
@@ -58,7 +57,7 @@
       text-decoration: underline;
     }
 
-    @media (max-width: $desk-start){
+    @media (max-width: $desk-start) {
       justify-content: center;
       align-items: center;
     }

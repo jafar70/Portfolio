@@ -1,10 +1,12 @@
 <?php
-/*
-* Template Name: Contact Template
-*/
-get_header(); 
+/**
+ * Template Name: Contact Template
+ *
+ * @package Jafar
+ */
 
-get_template_part( 'modules/m06', 'contact-form' ); 
+get_header();
+
+get_template_part( 'modules/m06', 'contact-form' );
 
 get_footer();
-?>
