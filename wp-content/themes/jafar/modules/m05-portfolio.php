@@ -67,7 +67,7 @@
 							</div>
 							<div class="m05__portfolio__overlay">
 								<h3 class="m05__portfolio__overlay__title">
-									<?php echo esc_html( $heading ); ?>
+						<?php echo esc_html( $heading ); ?>
 								</h3>
 							</div>
 						</a>

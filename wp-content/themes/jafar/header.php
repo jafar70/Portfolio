@@ -15,9 +15,9 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="theme-color" content="#1449e9">
-	<meta name="msapplication-navbutton-color" content="#1449e9">
-	<meta name="apple-mobile-web-app-status-bar-style" content="#1449e9">
+	<meta name="theme-color" content="#00000">
+	<meta name="msapplication-navbutton-color" content="#00000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#00000">
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
