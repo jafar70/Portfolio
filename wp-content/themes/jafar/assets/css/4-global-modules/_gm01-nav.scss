@@ -57,7 +57,8 @@
 					li {
 						&.menu-item-object-portfolio {
 							a{
-								#body.single-portfolio & {
+								#body.single-portfolio &,
+								#body.page-template-page-portfolio & {
 									background-color: $copy;
 									color: #fff;
 								}
