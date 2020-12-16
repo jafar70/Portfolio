@@ -22,25 +22,23 @@ $heading    = get_field( 'm04_title' );
 	</h2>
 
 	<?php if ( have_rows( 'technologies' ) ) : ?>
+		<div class='m04__grid skills-grid'>
+			<?php
+			while ( have_rows( 'technologies' ) ) :
+				the_row();
 
-	<div class='m04__grid skills-grid'>
-		<?php
-		while ( have_rows( 'technologies' ) ) :
-			the_row();
+				$name  = get_sub_field( 'technology_name' );
+				$image = get_sub_field( 'technology_image' );
+				?>
 
-			$name  = get_sub_field( 'technology_name' );
-			$image = get_sub_field( 'technology_image' );
-			?>
-
-			<div class="m04__grid__item">
-				<div class="m04__card">
-					<img class='lazy' data-src='<?php echo esc_url( $image['url'] ); ?>' alt="<?php echo esc_attr( $image['alt'] ); ?>">
-					<h3><?php echo esc_html( $name ); ?></h3>
+				<div class="m04__grid__item">
+					<div class="m04__card">
+						<img class='lazy' data-src='<?php echo esc_url( $image['url'] ); ?>' alt="<?php echo esc_attr( $image['alt'] ); ?>">
+						<h3><?php echo esc_html( $name ); ?></h3>
+					</div>
 				</div>
-			</div>
-		<?php endwhile; ?> 
-	</div>
-
+			<?php endwhile; ?> 
+		</div>
 	<?php endif; ?>
 
 	</div>

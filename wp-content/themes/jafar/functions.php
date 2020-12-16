@@ -43,27 +43,38 @@ if ( ! function_exists( 'jafar_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in one location.
-		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'jafar' ),
-		) );
+		register_nav_menus(
+			array(
+				'menu-1' => esc_html__( 'Primary', 'jafar' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'jafar_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'jafar_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -73,12 +84,15 @@ if ( ! function_exists( 'jafar_setup' ) ) :
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
-			'flex-width'  => true,
-			'flex-height' => true,
-		) );
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 250,
+				'width'       => 250,
+				'flex-width'  => true,
+				'flex-height' => true,
+			)
+		);
 	}
 endif;
 add_action( 'after_setup_theme', 'jafar_setup' );
@@ -104,15 +118,17 @@ add_action( 'after_setup_theme', 'jafar_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function jafar_widgets_init() {
-	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'jafar' ),
-		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'jafar' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
-	) );
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar', 'jafar' ),
+			'id'            => 'sidebar-1',
+			'description'   => esc_html__( 'Add widgets here.', 'jafar' ),
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
 }
 add_action( 'widgets_init', 'jafar_widgets_init' );
 
@@ -120,7 +136,7 @@ add_action( 'widgets_init', 'jafar_widgets_init' );
  * Enqueue scripts and styles.
  */
 function jafar_scripts() {
-	wp_enqueue_style( 'jafar-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'jafar-style', get_template_directory_uri() . '/style.min.css' );
 	wp_enqueue_script( 'jqurey-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', array( 'jquery' ), '20151215', true );
 	wp_enqueue_script( 'jqurey-ui-js', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array( 'jquery' ), '20151215', true );
 	wp_enqueue_script( 'mixitup-js', 'https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js', array( 'jquery' ), '20151215', true );
@@ -134,6 +150,7 @@ function jafar_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'jafar_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -162,47 +179,61 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-// Creates Game Reviews Custom Post Type
+/**
+ * Creates Portfolio Custom Post Type.
+ */
 function portfolio_init() {
-  $args = array(
-    'name' => 'portfolio',
-		'label' => 'Portfolio',
-		'singular_label' => 'Portfolio Item',
-		'public' => true,  
-		'capability_type' => 'post',
-		'show_ui' => true,
-		'hierarchical' => false,
-		'has_archive' => true,
-		'menu_icon' => 'dashicons-art',
-    'taxonomies'          => array('topics', 'category' ),
-  	'rewrite_withfront' => false ,
-  	array('slug' => 'portfolio'),
-      'supports' => array(
-      'title',
+	$args = array(
+		'name'              => 'portfolio',
+		'label'             => 'Portfolio',
+		'singular_label'    => 'Portfolio Item',
+		'public'            => true,
+		'capability_type'   => 'post',
+		'show_ui'           => true,
+		'hierarchical'      => false,
+		'has_archive'       => true,
+		'menu_icon'         => 'dashicons-art',
+		'taxonomies'        => array( 'topics', 'category' ),
+		'rewrite_withfront' => false,
+		array( 'slug' => 'portfolio' ),
+		'supports'          => array(
+			'title',
 			'revisions',
 			'thumbnail',
-			'page-attributes',)
-  );
-  
-  register_post_type( 'portfolio', $args );
+			'page-attributes',
+		),
+	);
+
+	register_post_type( 'portfolio', $args );
 }
 add_action( 'init', 'portfolio_init' );
 
-/*------------------------------------*\
+/*
+------------------------------------*\
 	ACF Pro options page
-\*------------------------------------*/
-if( function_exists('acf_add_options_page') ) {
-	
+\*------------------------------------
+*/
+
+if ( function_exists( 'acf_add_options_page' ) ) {
 	acf_add_options_page();
-	
 }
 
-function cc_mime_types($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
+/**
+ * Allow SVG Files Upload $mimes
+ *
+ * @param array $mimes the string to source SVG.
+ */
+function cc_mime_types( $mimes ) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
 }
-add_filter('upload_mimes', 'cc_mime_types');
+add_filter( 'upload_mimes', 'cc_mime_types' );
 
-add_filter('webpc_htaccess_rules', function($rules, $path) {
-	return '';
-}, 10, 2);
+add_filter(
+	'webpc_htaccess_rules',
+	function( $rules, $path ) {
+		return '';
+	},
+	10,
+	2
+);

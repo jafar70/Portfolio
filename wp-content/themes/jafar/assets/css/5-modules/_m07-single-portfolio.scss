@@ -20,6 +20,7 @@
 
 			p{
 				margin: 0 0 10px;
+				font-weight: 600;
 			}
 
 			&:last-of-type {
@@ -34,7 +35,9 @@
 	}
 
 	&__img {
-		margin: 30px 0 40px;
+		margin: 30px auto 40px;
+		display: block;
+		width: 900px;
 	}
 
 	&__grid {
@@ -106,6 +109,7 @@
 					span {
 						font-size: 21px;
 						margin-top: -4px;
+						line-height: normal;
 					}
 				}
 

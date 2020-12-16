@@ -14,13 +14,14 @@
   &__title {
     text-transform: uppercase;
     margin-bottom: 40px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   &__grid {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -8px;
+    justify-content: center;
     
     &__item {
       width: calc(25% - 16px);

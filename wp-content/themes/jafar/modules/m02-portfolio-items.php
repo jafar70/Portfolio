@@ -29,26 +29,11 @@ $cta_link   = get_field( 'm02_link' );
 			$results = new WP_Query( $args );
 			while ( $results->have_posts() ) :
 				$results->the_post();
-				$heading     = get_the_title();
-				$img_url     = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
-				$alt_text    = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
-				$categories  = get_the_category();
-				$slugs       = wp_list_pluck( $categories, 'slug' );
-				$class_names = join( ' ', $slugs );
+				$heading  = get_the_title();
+				$img_url  = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+				$alt_text = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
 				?>
-				<div class="m02__grid__item 
-				<?php
-				if ( $class_names ) {
-					echo esc_html( ' ' . $class_names );
-				}
-				?>
-				" data-cat="
-				<?php
-				if ( $class_names ) {
-					echo esc_html( ' ' . $class_names );
-				}
-				?>
-				">
+				<div class="m02__grid__item">
 					<a href='<?php the_permalink(); ?>' class="m02__portfolio">
 						<div class="m02__portfolio__img">
 							<img data-src="<?php echo esc_url( $img_url ); ?>" alt="<?php echo esc_attr( $alt_text ); ?>" class="lazy">
