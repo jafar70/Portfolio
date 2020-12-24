@@ -32,9 +32,15 @@ $disclaimer            = get_field( 'project_disclaimer' );
 		<div class="m07__meta__item">
 			<p class='categories'>
 			<?php
-			foreach ( $categories as $category ) {
+			$num_items = count( $categories );
+			$i         = 0;
+			foreach ( $categories as $key => $category ) {
 				$name = $category->name;
-				echo esc_html( " $name " );
+				if ( ++$i === $num_items ) {
+					echo esc_html( " $name " );
+				} else {
+					echo esc_html( " $name /" );
+				}
 			}
 			?>
 			</p>
