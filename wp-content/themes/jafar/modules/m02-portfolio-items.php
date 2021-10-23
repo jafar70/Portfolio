@@ -30,7 +30,7 @@ $cta_link   = get_field( 'm02_link' );
 			while ( $results->have_posts() ) :
 				$results->the_post();
 				$heading  = get_the_title();
-				$img_url  = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+				$img_url  = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ), 'medium' );
 				$alt_text = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
 				?>
 				<div class="m02__grid__item">

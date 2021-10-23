@@ -137,10 +137,8 @@ add_action( 'widgets_init', 'jafar_widgets_init' );
  */
 function jafar_scripts() {
 	wp_enqueue_style( 'jafar-style', get_template_directory_uri() . '/style.min.css' );
-	wp_enqueue_script( 'jqurey-js', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js', array( 'jquery' ), '20151215', true );
-	wp_enqueue_script( 'jqurey-ui-js', 'https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js', array( 'jquery' ), '20151215', true );
-	wp_enqueue_script( 'mixitup-js', 'https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js', array( 'jquery' ), '20151215', true );
-	wp_enqueue_script( 'vanilla-js', 'https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.0/lazyload.min.js', '20151215', true );
+	wp_enqueue_script( 'mixitup', 'https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js', array( 'jquery' ), '3.3.1', true );
+	wp_enqueue_script( 'vanilla-lazyload', 'https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/17.1.0/lazyload.min.js', '20151215', true );
 	wp_enqueue_script( 'jafar-scripts', get_template_directory_uri() . '/assets/js/script.min.js', array( 'jquery' ), '20151215', true );
 	wp_enqueue_script( 'jafar-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'jafar-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

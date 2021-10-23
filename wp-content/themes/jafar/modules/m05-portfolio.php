@@ -48,19 +48,7 @@
 					$slugs       = wp_list_pluck( $categories, 'slug' );
 					$class_names = join( ' ', $slugs );
 					?>
-					<div class="m05__grid__item 
-					<?php
-					if ( $class_names ) {
-						echo ' ' . esc_html( $class_names );
-					}
-					?>
-					" data-cat="
-					<?php
-					if ( $class_names ) {
-						echo ' ' . esc_html( $class_names );
-					}
-					?>
-					">
+					<div class="m05__grid__item <?php echo ( $class_names ) ? ' ' . esc_html( $class_names ) : false; ?> ">
 						<a class="m05__portfolio" href="<?php the_permalink(); ?>">
 							<div class="m05__portfolio__img">
 								<img data-src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_attr( $alt_text ); ?>" class="lazy">

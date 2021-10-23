@@ -33,11 +33,11 @@ $linkedin_url  = get_field( 'linkedin_url', 'option' );
 	</nav>
 
 	<div class="gm01__grid__right nav-right">
-		<div id="toggle" class="hamburger" onclick="myFunction(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>  
+		<div class="hamburger">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>  
 			<?php if ( $instagram_url ) { ?>
 				<a href="<?php echo esc_url( $instagram_url ); ?>" rel="noopener" target="_blank" class='nav-right__link' aria-label="Instagram">
 					<?php get_template_part( 'assets/img/inline', 'instagram.svg' ); ?>
