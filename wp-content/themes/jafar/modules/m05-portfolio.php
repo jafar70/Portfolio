@@ -17,7 +17,7 @@
 
 	<div class="container mb-30">
 		<ul id="filters" class="m05__filters">
-			<li><span class="active filter" data-filter="*"><?php echo esc_html( 'All' ); ?></span></li>
+			<li><span class="active filter" data-filter="all"><?php echo esc_html( 'All' ); ?></span></li>
 				<?php
 					$categories = get_categories(
 						array(
