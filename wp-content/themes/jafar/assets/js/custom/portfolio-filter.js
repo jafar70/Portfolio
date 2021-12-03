@@ -8,7 +8,7 @@ if (typeof (portfolioList) != 'undefined' && portfolioList != null) {
 	// As we will use the target selector in several parts of the demo,
 	// we will declare it as a variable here.
 
-	var targetSelector = '.m05__grid__item';
+	const targetSelector = '.m05__grid__item';
 
 	/**
 	 * Reads a hash from the URL (if present), and converts it into a class
@@ -19,9 +19,9 @@ if (typeof (portfolioList) != 'undefined' && portfolioList != null) {
 	 */
 
 	function getSelectorFromHash() {
-		var hash = window.location.hash.replace(/^#/g, '');
+		const hash = window.location.hash.replace(/^#/g, '');
 
-		var selector = hash ? '.' + hash : targetSelector;
+		const selector = hash ? '.' + hash : targetSelector;
 
 		return selector;
 	}
@@ -34,8 +34,8 @@ if (typeof (portfolioList) != 'undefined' && portfolioList != null) {
 	 */
 
 	function setHash(state) {
-		var selector = state.activeFilter.selector;
-		var newHash = '#' + selector.replace(/^\./g, '');
+		const selector = state.activeFilter.selector;
+		const newHash = '#' + selector.replace(/^\./g, '');
 
 		if (selector === targetSelector && window.location.hash) {
 			// Equivalent to filter "all", remove the hash
@@ -50,7 +50,7 @@ if (typeof (portfolioList) != 'undefined' && portfolioList != null) {
 
 	// Instantiate and configure the mixer
 
-	var mixer = mixitup('.m05__list', {
+	const mixer = mixitup('.m05__list', {
 		selectors: {
 			target: targetSelector
 		},
@@ -80,22 +80,10 @@ if (typeof (portfolioList) != 'undefined' && portfolioList != null) {
 	// In which case this handler would no longer be neccessary.
 
 	window.onhashchange = function () {
-		var selector = getSelectorFromHash();
+		const selector = getSelectorFromHash();
 
 		if (selector === mixer.getState().activeFilter.selector) return; // no change
 
 		mixer.filter(selector);
 	};
 }
-
-// Toogle filter tabs.
-const filterTabs = document.querySelectorAll('.m05__filters > li > span');
-filterTabs.forEach(filterTab => {
-	filterTab.addEventListener('click', (e) => {
-		const active = document.querySelector('.active');
-		if (active) {
-			active.classList.remove('active');
-		}
-		e.currentTarget.classList.add('active');
-	});
-});

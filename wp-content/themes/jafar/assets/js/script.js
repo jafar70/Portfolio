@@ -100,18 +100,4 @@ if (typeof portfolioList != 'undefined' && portfolioList != null) {
 
     mixer.filter(selector);
   };
-} // Toogle filter tabs.
-
-
-var filterTabs = document.querySelectorAll('.m05__filters > li > span');
-filterTabs.forEach(function (filterTab) {
-  filterTab.addEventListener('click', function (e) {
-    var active = document.querySelector('.active');
-
-    if (active) {
-      active.classList.remove('active');
-    }
-
-    e.currentTarget.classList.add('active');
-  });
-});
+}
