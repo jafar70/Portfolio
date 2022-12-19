@@ -4,15 +4,23 @@ $logo-font:  'Poppins', sans-serif;
 
 // Colors
 $white:       #fff;
-$grey:        #ececec;
+$grey:        #f7f7f7;
 $black:       #111;
 $copy:        #111;
-$red:         #ff0000;
-$jafar-blue:  #1449e9;
-$jafar-dark-blue: darken($jafar-blue, 25%);
+$red:         #FF5147;
+$error-red:         #ff0000;
 
 
 // Breakpoints
 $mobile-start:      450px;
 $lap-start:         669px;
 $desk-start:        960px;
+
+// Spacing
+$padding-desk: 6rem;
+$padding-lap: 5rem;
+$padding-mobile: 4rem;
+
+$margin-desk: 6rem;
+$margin-lap: 5rem;
+$margin-mobile: 4rem;

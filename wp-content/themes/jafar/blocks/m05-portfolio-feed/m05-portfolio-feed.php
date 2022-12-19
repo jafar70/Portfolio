@@ -1,6 +1,6 @@
 <?php
 /**
- * Block: M05 - Portfolio
+ * Block: M05 - Portfolio Feed
  *
  * @used:
  *  - page-porfolio.php
@@ -10,11 +10,7 @@
 
 ?>
 
-<div class="m05">
-	<div class="container m05__title">
-		<h1 class="m05__title__text banner-title"><?php echo esc_html( 'Portfolio.' ); ?></h1>
-	</div>
-
+<div class="m05 break-out">
 	<div class="container mb-30">
 		<ul id="filters" class="m05__filters">
 			<li><span class="active filter" data-filter="all"><?php echo esc_html( 'All' ); ?></span></li>

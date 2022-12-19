@@ -27,6 +27,7 @@ $linkedin_url  = get_field( 'linkedin_url', 'option' );
 					'menu'       => 'primary',
 					'container'  => 'ul',
 					'menu_class' => 'nav__links',
+					'link_after' => '<div class="dot-stretching"></div>',
 				)
 			);
 			?>

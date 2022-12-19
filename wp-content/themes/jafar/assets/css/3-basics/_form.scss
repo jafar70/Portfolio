@@ -44,11 +44,11 @@
 		&_error {
 			input,
 			textarea {
-				border: 1px solid $red;
+				border: 1px solid $error-red;
 			}
 
 			.gfield_description {
-				color: $red;
+				color: $error-red;
 				font-size: 13px;
         margin-top: 6px;
 			}
@@ -79,7 +79,7 @@
 }
 
 .validation_error {
-	color: $red;
+	color: $error-red;
 	text-align: center;
 	margin-bottom: 35px;
 }

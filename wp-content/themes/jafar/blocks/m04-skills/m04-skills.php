@@ -12,14 +12,15 @@ $subheading = get_field( 'm04_tag' );
 $heading    = get_field( 'm04_title' );
 
 ?>
-<div class="m04">
+<div class="m04 pt pb break-out">
 	<div class="container text-center">
-	<h4 class="m04__tag">
-		<?php echo esc_html( $subheading ); ?>
-	</h4>
 	<h2 class="m04__title">
 		<?php echo esc_html( $heading ); ?>
 	</h2>
+
+	<p class="m04__tag">
+		<?php echo esc_html( $subheading ); ?>
+	</p>
 
 	<?php if ( have_rows( 'technologies' ) ) : ?>
 		<div class='m04__grid skills-grid'>

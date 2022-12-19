@@ -1,0 +1,16 @@
+{
+	"name": "acf/m06-contact-form",
+	"title": "M06 - Contact Form",
+	"description": "The contact form block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"contact",
+		"form"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m06-contact-form.php"
+	},
+	"align": "full"
+}

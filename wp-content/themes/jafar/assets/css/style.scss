@@ -1,6 +1,6 @@
 // This is the single file output by sass. It is intended to ONLY @import other files.
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Nunito+Sans:wght@400%3B600%3B700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Nunito+Sans:wght@400%3B600%3B700%3B800&display=swap');
 // 1 - TOOLS
 @import '1-tools/normalize';
 
@@ -9,7 +9,7 @@
 @import '2-helpers/variables';
 @import '2-helpers/functions';
 @import '2-helpers/mixins';
-
+@import '2-helpers/classes';
 
 // 3 - BASICS
 @import '3-basics/base';
@@ -27,6 +27,7 @@
 @import '4-global-modules/gm02-mobile-nav';
 @import '4-global-modules/gm03-loader';
 @import '4-global-modules/gm04-footer';
+@import '4-global-modules/gm05-footer-cta';
 
 // 5 - MODULES
 @import '5-modules/m01-home-hero';
@@ -35,7 +36,8 @@
 @import '5-modules/m04-skills';
 @import '5-modules/m05-portfolio';
 @import '5-modules/m06-contact-form';
-@import '5-modules/m07-single-portfolio';
+@import '5-modules/m07-cta';
+@import '5-modules/m08-page-header';
 
 // 6 - PAGES
 @import '6-pages/page-home';

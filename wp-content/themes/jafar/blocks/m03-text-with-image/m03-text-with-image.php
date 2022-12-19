@@ -1,6 +1,6 @@
 <?php
 /**
- * Block: M03 - About Me
+ * Block: M03 - Text with Image
  *
  * @used:
  *  - page-home.php
@@ -8,8 +8,6 @@
  * @package Jafar
  */
 
-$subheading    = get_field( 'm03_tag' );
-$heading       = get_field( 'm03_title' );
 $profile_image = get_field( 'personal_image' );
 $text          = get_field( 'about_me_text' );
 $instagram_url = get_field( 'instagram_url', 'option' );
@@ -18,14 +16,8 @@ $linkedin_url  = get_field( 'linkedin_url', 'option' );
 $twitter_url   = get_field( 'twitter_url', 'option' );
 $cv_url        = get_field( 'cv_file', 'option' );
 ?>
-<div class="m03">
+<div class="m03 pt pb break-out">
 	<div class="container">
-		<h4 class="m03__tag">
-			<?php echo esc_html( $subheading ); ?>
-		</h4>
-		<h2 class="m03__title">
-			<?php echo esc_html( $heading ); ?>
-		</h2>
 		<div class="m03__grid">
 			<div class="m03__grid__img">
 

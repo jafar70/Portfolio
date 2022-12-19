@@ -1,1 +1,67 @@
 //	Headings
+
+h1,.alpha {
+  font-size: 40px;
+  font-size: 2.5rem;
+  line-height: 1.425
+}
+
+h2,.beta {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.1875
+}
+
+h3,.gamma {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.58333
+}
+
+h4,.delta {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.9
+}
+
+h5,.epsilon {
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 1.35714
+}
+
+h6,.zeta {
+  font-size: 10px;
+  font-size: .625rem;
+  line-height: 1.9
+}
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+
+.font-reg {
+	font-weight: 400;
+}
+
+.font-semibold {
+	font-weight: 600;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.color-white{
+	color: $white;
+}
+
+.color-black {
+	color: $black;
+}

@@ -1,0 +1,15 @@
+{
+	"name": "acf/m04-skills",
+	"title": "M04 - Skills",
+	"description": "The skills block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"skills"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m04-skills.php"
+	},
+	"align": "full"
+}

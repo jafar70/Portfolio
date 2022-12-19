@@ -8,15 +8,21 @@
  * @package Jafar
  */
 
-$subheading = get_field( 'm02_tag' );
 $heading    = get_field( 'm02_title' );
+$subheading = get_field( 'm02_tag' );
 $cta_link   = get_field( 'm02_link' );
 ?>
 
-<div class="m02">
+<div class="m02 pb pt break-out">
 	<div class="container">
-		<h4 class="m02__tag"><?php echo esc_html( $subheading ); ?></h4>
-		<h2 class="m02__title"><?php echo esc_html( $heading ); ?></h2>
+		<?php if ( $heading ) : ?>
+			<h2 class="m02__title"><?php echo esc_html( $heading ); ?></h2>
+		<?php endif; ?>
+
+		<?php if ( $subheading ) : ?>
+			<p class="m02__subheading"><?php echo esc_html( $subheading ); ?></p>
+		<?php endif; ?>
+
 
 		<div class="m02__grid">
 			<?php

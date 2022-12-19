@@ -1,26 +1,18 @@
 .button {
   display: inline-block;
-  background-color: $copy;
-  padding: 14px 20px 12px;
+  background-color: $red;
   color: #fff;
-  text-transform: uppercase;
-  -webkit-transition: .2s background-color ease;
-  transition: .2s background-color ease;
-  font-size: 13px;
+  transition: all 0.3s ease;
   font-weight: 700;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  text-transform: uppercase;
+	padding: 0.75rem 1.5rem;
+	border-radius: 4.25em;
 
   &:hover {
-  }
-
-  &--blue{
-    background-color: $jafar-blue;
-    &:hover {
-      background-color: $jafar-dark-blue;
-    }
+		background-color: darken($color: $red, $amount: 20);
+		box-shadow: 7px 7px 18px -4px rgba($color: $red, $alpha: 0.5);
   }
 
   &--disabled {

@@ -1,0 +1,16 @@
+{
+	"name": "acf/m01-home-banner",
+	"title": "M01 - Home Banner",
+	"description": "The home page banner block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"home",
+		"banner"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m01-home-hero.php"
+	},
+	"align": "full"
+}

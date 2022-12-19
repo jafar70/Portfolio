@@ -12,7 +12,7 @@
 ?>
 
 </main>
-
+<?php get_template_part( 'global-modules/gm05', 'footer-cta' ); ?>
 <?php get_template_part( 'global-modules/gm04', 'footer' ); ?>
 
 <?php wp_footer(); ?>

@@ -4,14 +4,10 @@ html{
 
 body {
   font-family: $font;
-  margin-top: 104px;
-  background-color: $grey;
+  background-color: $white;
   color: $copy;
   line-height: 1.5;
-
-  @media screen and (max-width: 800px){
-    margin-top: 86px;
-  }
+	font-size: 16px;
 
   p{
     font-weight: 500;
@@ -22,49 +18,6 @@ body {
   a {
     color: $copy;
   }
-}
-
-h1,.alpha {
-  font-size: 40px;
-  font-size: 2.5rem;
-  line-height: 1.425
-}
-
-h2,.beta {
-  font-size: 32px;
-  font-size: 2rem;
-  line-height: 1.1875
-}
-
-h3,.gamma {
-  font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.58333
-}
-
-h4,.delta {
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.9
-}
-
-h5,.epsilon {
-  font-size: 14px;
-  font-size: .875rem;
-  line-height: 1.35714
-}
-
-h6,.zeta {
-  font-size: 10px;
-  font-size: .625rem;
-  line-height: 1.9
-}
-
-h1,h2,h3,h4,h5,h6 {
-  line-height: 1;
-  font-weight: 500;
-  margin: 0 0 15px;
-  color: $copy
 }
 
 .logged-in {
@@ -78,4 +31,17 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 32px;
   margin: 0;
   font-weight: 600;
+}
+
+
+.break-out {
+  position: relative;
+  margin-left: -50vw !important;
+  max-width: 100vw !important;
+  width: 100vw !important;
+  left: 50% !important;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    max-width: calc(100vw - 9px) !important;
+  }
 }

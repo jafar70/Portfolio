@@ -161,6 +161,11 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
+ * ACF Blocks.
+ */
+require get_template_directory() . '/inc/acf-blocks.php';
+
+/**
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
@@ -189,7 +194,7 @@ function portfolio_init() {
 		'capability_type'   => 'post',
 		'show_ui'           => true,
 		'hierarchical'      => false,
-		'has_archive'       => true,
+		'has_archive'       => false,
 		'menu_icon'         => 'dashicons-art',
 		'taxonomies'        => array( 'topics', 'category' ),
 		'rewrite_withfront' => false,

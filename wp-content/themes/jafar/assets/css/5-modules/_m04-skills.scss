@@ -1,26 +1,18 @@
 .m04 {
   background-color: $grey;
-  padding: 80px 0;
   text-align: center;
 
-  @media only screen and (max-width: $desk-start) {
-    padding: 50px 0;
-  }
-
   &__tag {
-    text-transform: uppercase;
   }
 
   &__title {
-    text-transform: uppercase;
-    margin-bottom: 40px;
     font-weight: 700;
   }
 
   &__grid {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -8px;
+    margin: 3rem -8px 0;
     justify-content: center;
     
     &__item {

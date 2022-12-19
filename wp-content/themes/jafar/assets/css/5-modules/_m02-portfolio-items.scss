@@ -1,25 +1,18 @@
 .m02 {
-  background-color: $grey;
-  padding: 80px 0;
+  background-color: $white;
   text-align: center;
 
-  @media only screen and (max-width: $desk-start) {
-    padding: 50px 0;
-  }
-
   &__tag {
-    text-transform: uppercase;
   }
 
   &__title {
-    text-transform: uppercase;
     font-weight: 700;
   }
 
   &__grid {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px -10px 0;
+    margin: 3rem -10px 0;
 
     &__item {
       width: calc(25% - 20px);

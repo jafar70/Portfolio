@@ -1,11 +1,15 @@
 .gm01 {
-	background-color: #fff;
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	z-index: 5;
-  box-shadow: 0px 3px 6px 0px rgba(20, 20, 20, 0.05);
+	transition: all 0.3s ease;
+
+	&--onscroll {
+		background-color: $white;
+		box-shadow: 0 3px 6px 0 rgba(20,20,20,.05);
+	}
 
 	&--transparent{
 		background-color: transparent;
@@ -66,24 +70,85 @@
 						}
 						a {
 							transition: color 0.3s ease 0s;
-							padding: 40px 20px;
+							padding: 1rem 1rem;
 							color: $copy;
 							transition: all 0.3s ease;
 							font-weight: 600;
 							text-decoration: none;
 							display: block;
+							position: relative;
 
 							&:hover {
-								background-color: $copy;
-								color: #fff;
+								
 							}
 						}
 
-						&.current_page_item,
 						&.current-menu-item {
-							a {
-								background-color: $copy;
-								color: #fff;
+							.dot-stretching {
+								opacity: 1;
+		
+								&::before {
+									transform: translate(-7px) scale(1, 1);
+								}
+		
+								&::after {
+									transform: translate(7px) scale(1, 1);
+								}
+							}
+						}
+
+						&:not(.current-menu-item):hover {
+							.dot-stretching {
+								opacity: 1;
+		
+								&::before {
+									transform: translate(-7px) scale(1, 1);
+								}
+		
+								&::after {
+									transform: translate(7px) scale(1, 1);
+								}
+							}
+						}
+
+						.dot-stretching {
+							position: absolute;
+							top: 81%;
+							left: 50%;
+							margin-right: -50%;
+							transform: translate(-50%, -50%);
+							width: 4px;
+							height: 4px;
+							border-radius: 50%;
+							background-color: $red;
+							color: $red;
+							opacity: 0;
+							transition: all 0.3s ease;
+		
+							&::before,
+							&::after {
+								content: "";
+								display: inline-block;
+								position: absolute;
+								top: 0;
+							}
+		
+							&::before {
+								width: 4px;
+								height: 4px;
+								border-radius: 50%;
+								background-color: $red;
+								color: $red;
+								transition: all 0.5s ease;
+							}
+		
+							&::after {
+								width: 4px;
+								height: 4px;
+								border-radius: 50%;
+								background-color: $red;
+								color: $red;
+								transition: all 0.5s ease;
 							}
 						}
 					}
