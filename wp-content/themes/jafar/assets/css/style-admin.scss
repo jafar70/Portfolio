@@ -1,0 +1,29 @@
+/**
+ * Custom admin styles
+ * Stylesheet for small admin CSS updates.
+ */
+
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+@media (min-width: 782px) {
+  .edit-post-layout.is-sidebar-opened .edit-post-layout__content {
+    margin-right: 470px;
+  }
+  .edit-post-layout.is-sidebar-opened .edit-post-sidebar,
+  .edit-post-layout.is-sidebar-opened .edit-post-plugin-sidebar__sidebar-layout
+  .edit-post-toggle-publish-panel {
+    width: 470px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .edit-post-layout.is-sidebar-opened .edit-post-layout__content {
+    margin-right: 470px;
+  }
+  .edit-post-layout.is-sidebar-opened .edit-post-sidebar,
+  .edit-post-layout.is-sidebar-opened .edit-post-plugin-sidebar__sidebar-layout
+  .edit-post-toggle-publish-panel {
+    width: 470px;
+  }
+}

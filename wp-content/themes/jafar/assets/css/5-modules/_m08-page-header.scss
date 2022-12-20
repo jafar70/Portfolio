@@ -1,4 +1,14 @@
 .m08 {
+	padding: 10rem 0 0;
+
+	@media (max-width: $lap-start) {
+		padding: 8rem 0 0;
+	}
+
+	@media (max-width: $mobile-start) {
+		padding: 7rem 0 0;
+	}
+
 	&__title {
 		
 	}

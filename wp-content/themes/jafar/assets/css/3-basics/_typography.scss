@@ -1,45 +1,76 @@
 //	Headings
 
-h1,.alpha {
+h1,.huge {
+	font-size: 60px;
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 50px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 36px;
+	}
+}
+
+h2,.alpha {
   font-size: 40px;
-  font-size: 2.5rem;
-  line-height: 1.425
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 36px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 27px;
+	}
 }
 
-h2,.beta {
+h3,.beta {
   font-size: 32px;
-  font-size: 2rem;
-  line-height: 1.1875
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 27px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 23px;
+	}
 }
 
-h3,.gamma {
+h4,.gamma {
   font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 1.58333
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 22px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 20px;
+	}
 }
 
-h4,.delta {
+h5,.delta {
   font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.9
+  
+	@media only screen and (max-width: $desk-start) {
+		font-size: 18px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 18px;
+	}
 }
 
-h5,.epsilon {
+h6,.epsilon {
   font-size: 14px;
   font-size: .875rem;
   line-height: 1.35714
 }
 
-h6,.zeta {
-  font-size: 10px;
-  font-size: .625rem;
-  line-height: 1.9
-}
 
 h1,h2,h3,h4,h5,h6 {
   line-height: 1;
-  font-weight: 500;
-  margin: 0 0 15px;
+  font-weight: 700;
+  margin: 0 0 1rem;
 }
 
 .font-reg {

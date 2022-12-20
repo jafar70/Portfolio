@@ -64,6 +64,9 @@ if ( ! function_exists( 'jafar_setup' ) ) :
 			)
 		);
 
+		add_theme_support( 'editor-styles' );
+		add_editor_style( 'style-editor.css' );
+
 		// Set up the WordPress core custom background feature.
 		add_theme_support(
 			'custom-background',
