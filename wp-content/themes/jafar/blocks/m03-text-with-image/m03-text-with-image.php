@@ -20,11 +20,8 @@ $cv_url        = get_field( 'cv_file', 'option' );
 	<div class="container">
 		<div class="m03__grid">
 			<div class="m03__grid__img">
-
-			<?php
-			if ( $profile_image ) :
-				?>
-			<img class='lazy' data-src='<?php echo esc_url( $profile_image['url'] ); ?>' alt="<?php echo esc_attr( $profile_image['alt'] ); ?>" />
+			<?php if ( $profile_image ) : ?>
+				<?php theme__display_image( $profile_image, 'inline', 'large' ); ?>
 			<?php endif; ?>
 
 			</div>

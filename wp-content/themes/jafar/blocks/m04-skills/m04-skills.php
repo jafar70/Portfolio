@@ -34,7 +34,7 @@ $heading    = get_field( 'm04_title' );
 
 				<div class="m04__grid__item">
 					<div class="m04__card">
-						<img class='lazy' data-src='<?php echo esc_url( $image['url'] ); ?>' alt="<?php echo esc_attr( $image['alt'] ); ?>">
+						<?php theme__display_image( $image, 'icon', 'large' ); ?>
 						<h3><?php echo esc_html( $name ); ?></h3>
 					</div>
 				</div>

@@ -186,6 +186,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 /**
+ * Custom Functions.
+ */
+require get_template_directory() . '/functions/functions-image.php';
+
+/**
  * Creates Portfolio Custom Post Type.
  */
 function portfolio_init() {

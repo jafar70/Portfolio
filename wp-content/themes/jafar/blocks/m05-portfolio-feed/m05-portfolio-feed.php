@@ -10,8 +10,8 @@
 
 ?>
 
-<div class="m05 break-out">
-	<div class="container mb-30">
+<div class="m05 break-out pt pb">
+	<div class="container">
 		<ul id="filters" class="m05__filters">
 			<li><span class="active filter" data-filter="all"><?php echo esc_html( 'All' ); ?></span></li>
 				<?php
@@ -39,7 +39,16 @@
 				while ( $results->have_posts() ) :
 					$results->the_post();
 					$heading     = get_the_title();
-					$url         = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ), 'thumbnail' );
+					$image_id    = get_post_thumbnail_id( $post->ID );
+					$img_url     = wp_get_attachment_url( $image_id, 'small' );
+					$image_alt   = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+					$image_title = get_the_title( $image_id );
+					$alt_text    = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
+					$image       = array(
+						'sizes' => array( 'small' => $img_url ),
+						'title' => $image_title,
+						'alt'   => $alt_text,
+					);
 					$categories  = get_the_category();
 					$slugs       = wp_list_pluck( $categories, 'slug' );
 					$class_names = join( ' ', $slugs );
@@ -47,11 +56,11 @@
 					<div class="m05__grid__item <?php echo ( $class_names ) ? ' ' . esc_html( $class_names ) : false; ?> ">
 						<a class="m05__portfolio" href="<?php the_permalink(); ?>">
 							<div class="m05__portfolio__img">
-								<img data-src="<?php echo esc_url( $url ); ?>" alt="<?php echo esc_attr( $alt_text ); ?>" class="lazy">
+								<?php theme__display_image( $image, 'bg', 'small' ); ?>
 							</div>
 							<div class="m05__portfolio__overlay">
 								<h3 class="m05__portfolio__overlay__title">
-						<?php echo esc_html( $heading ); ?>
+									<?php echo esc_html( $heading ); ?>
 								</h3>
 							</div>
 						</a>
