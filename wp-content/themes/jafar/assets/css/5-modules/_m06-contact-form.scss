@@ -15,7 +15,7 @@
 			width: calc(40% - 40px);
 
 			@media (max-width: $desk-start) {
-				width: 100%;
+				width: auto;
 				margin-bottom: 20px;
 			}
 		}
@@ -23,7 +23,7 @@
 		&__form {
 			width: calc(60% - 40px);
 			@media (max-width: $desk-start) {
-				width: 100%;
+				width: auto;
 			}
 		}
 	}

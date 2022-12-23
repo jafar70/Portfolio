@@ -37,6 +37,7 @@ function register_acf_blocks() {
 	register_block_type( get_template_directory() . '/blocks/m06-contact-form' );
 	register_block_type( get_template_directory() . '/blocks/m07-cta' );
 	register_block_type( get_template_directory() . '/blocks/m08-page-header' );
+	register_block_type( get_template_directory() . '/blocks/m09-portfolio-introduction' );
 }
 
 

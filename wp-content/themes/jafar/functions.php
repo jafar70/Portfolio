@@ -205,10 +205,12 @@ function portfolio_init() {
 		'has_archive'       => false,
 		'menu_icon'         => 'dashicons-art',
 		'taxonomies'        => array( 'topics', 'category' ),
+		'show_in_rest' => true,
 		'rewrite_withfront' => false,
 		array( 'slug' => 'portfolio' ),
 		'supports'          => array(
 			'title',
+			'editor',
 			'revisions',
 			'thumbnail',
 			'page-attributes',

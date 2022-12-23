@@ -1,38 +1,13 @@
 {
-    "key": "group_5f7a3cce6efd0",
-    "title": "M03: Text with Image",
+    "key": "group_63a4f2921bd2a",
+    "title": "M09: Portfolio Introduction",
     "fields": [
         {
-            "key": "field_5d1ce64c82eda",
-            "label": "Personal Image",
-            "name": "personal_image",
+            "key": "field_63a4f293c5e4c",
+            "label": "Project URL",
+            "name": "m09_project_url",
             "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "preview_size": "medium",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": ""
-        },
-        {
-            "key": "field_5d1ce6d782edb",
-            "label": "About Me Text",
-            "name": "about_me_text",
-            "aria-label": "",
-            "type": "wysiwyg",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -42,10 +17,27 @@
                 "id": ""
             },
             "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "placeholder": ""
+        },
+        {
+            "key": "field_63a4f399c5e4d",
+            "label": "Introduction",
+            "name": "m09_introduction",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -53,7 +45,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/m03-text-with-image"
+                "value": "acf\/m09-portfolio-introduction"
             }
         ]
     ],
@@ -66,5 +58,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671755800
+    "modified": 1671755765
 }

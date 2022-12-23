@@ -1,0 +1,16 @@
+{
+	"name": "acf/m09-portfolio-introduction",
+	"title": "M09 - Portfolio Introduction",
+	"description": "The portfolio introduction block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"portfolio",
+		"introduction"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m09-portfolio-introduction.php"
+	},
+	"align": "full"
+}

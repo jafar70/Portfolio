@@ -3,14 +3,14 @@
  * Block: M05 - Portfolio Feed
  *
  * @used:
- *  - page-porfolio.php
+ *  - Gutenberg
  *
  * @package Jafar
  */
 
 ?>
 
-<div class="m05 break-out pt pb">
+<div class="m05 block-element pt pb mt mb module">
 	<div class="container">
 		<ul id="filters" class="m05__filters">
 			<li><span class="active filter" data-filter="all"><?php echo esc_html( 'All' ); ?></span></li>
@@ -59,7 +59,7 @@
 								<?php theme__display_image( $image, 'bg', 'small' ); ?>
 							</div>
 							<div class="m05__portfolio__overlay">
-								<h3 class="m05__portfolio__overlay__title">
+								<h3 class="m05__portfolio__overlay__title text-center">
 									<?php echo esc_html( $heading ); ?>
 								</h3>
 							</div>

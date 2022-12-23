@@ -3,7 +3,7 @@
  * Block: M03 - Text with Image
  *
  * @used:
- *  - page-home.php
+ *  - Gutenberg
  *
  * @package Jafar
  */
@@ -16,7 +16,7 @@ $linkedin_url  = get_field( 'linkedin_url', 'option' );
 $twitter_url   = get_field( 'twitter_url', 'option' );
 $cv_url        = get_field( 'cv_file', 'option' );
 ?>
-<div class="m03 pt pb break-out">
+<div class="m03 pt pb mt mb module block-element">
 	<div class="container">
 		<div class="m03__grid">
 			<div class="m03__grid__img">

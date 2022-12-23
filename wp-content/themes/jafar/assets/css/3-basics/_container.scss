@@ -11,10 +11,6 @@ $container-width--small:   756px;
   margin-left: auto;
   max-width: $container-width--default;
 
-  // .container {
-  //   width: 100%;
-  //   max-width: none;
-  // }
 
   &--large {
     max-width: $container-width--large;
@@ -55,9 +51,9 @@ $container-width--small:   756px;
   margin-left: -5vw;
   margin-right: -5vw;
 
-  @media (min-width: 1410px) {
-    margin-left: calc((-100vw + #{$container-width--large}) / 2 );
-    margin-right: calc((-100vw + #{$container-width--large}) / 2 );
+  @media (min-width: 838px) {
+    margin-left: calc((-100vw + #{$container-width--small}) / 2 );
+    margin-right: calc((-100vw + #{$container-width--small}) / 2 );
   }
 }
 
@@ -65,7 +61,7 @@ $container-width--small:   756px;
   margin-left: -5vw;
   margin-right: -5vw;
 
-  @media (min-width: 838px) {
+  @media (min-width: 756px) {
     margin-left: calc((-100vw + #{$container-width--small}) / 2 );
     margin-right: calc((-100vw + #{$container-width--small}) / 2 );
   }

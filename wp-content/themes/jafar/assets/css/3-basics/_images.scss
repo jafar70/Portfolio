@@ -33,3 +33,15 @@ img {
 		}
 	}
 }
+
+.wp-block-image {
+	@extend .block-element;
+
+	figure {
+		@extend .container;
+
+		img {
+			width: 100%;
+		}
+	}
+}

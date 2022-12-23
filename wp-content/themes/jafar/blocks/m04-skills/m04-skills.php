@@ -3,7 +3,7 @@
  * Block: M04 - Skills
  *
  * @used:
- *  - page-home.php
+ *  - Gutenberg
  *
  * @package Jafar
  */
@@ -12,7 +12,7 @@ $subheading = get_field( 'm04_tag' );
 $heading    = get_field( 'm04_title' );
 
 ?>
-<div class="m04 pt pb break-out">
+<div class="m04 pt pb mt mb module block-element">
 	<div class="container text-center">
 	<h2 class="m04__title">
 		<?php echo esc_html( $heading ); ?>

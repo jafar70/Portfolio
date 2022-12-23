@@ -3,7 +3,7 @@
  * Block: M06 - Contact Form
  *
  * @used:
- *  - page-contact.php
+ *  - Gutenberg
  *
  * @package Jafar
  */
@@ -13,7 +13,7 @@ $subtext = get_field( 'm06_subtext' );
 $form_id = get_field( 'm06_form_id' );
 ?>
 
-<div class="m06 pb pt break-out">
+<div class="m06 pb pt mt mb module block-element">
 	<div class="container">
 		<div class="m06__grid">
 			<div class="m06__grid__text">

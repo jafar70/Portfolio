@@ -3,7 +3,7 @@
  * Block: M01 - Home Hero
  *
  * @used:
- *  - page-home.php
+ *  - Gutenberg
  *
  * @package Jafar
  */
@@ -11,7 +11,7 @@
 $banner_text = get_field( 'home_banner_text' );
 ?>
 
-<div class="m01 break-out">
+<div class="m01 block-element">
 	<div class="m01__grid container">
 		<?php if ( $banner_text ) : ?>
 		<div class="m01__grid__text">

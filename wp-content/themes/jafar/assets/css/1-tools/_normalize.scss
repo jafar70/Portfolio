@@ -31,6 +31,12 @@ body {
 main {
 	display: block;
 	overflow-x: hidden;
+
+	.module{
+		&:last-of-type {
+			margin-bottom: 0 !important;
+		}
+	}
 }
 
 /**
@@ -349,4 +355,12 @@ template {
 
 [hidden] {
 	display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }

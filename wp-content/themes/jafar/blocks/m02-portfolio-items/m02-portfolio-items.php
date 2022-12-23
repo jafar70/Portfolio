@@ -3,7 +3,7 @@
  * Block: M02 - Portfolio Items
  *
  * @used:
- *  - page-home.php
+ *  - Gutenberg
  *
  * @package Jafar
  */
@@ -13,7 +13,7 @@ $subheading = get_field( 'm02_tag' );
 $cta_link   = get_field( 'm02_link' );
 ?>
 
-<div class="m02 pb pt break-out">
+<div class="m02 pb pt mt mb module block-element">
 	<div class="container">
 		<?php if ( $heading ) : ?>
 			<h2 class="m02__title"><?php echo esc_html( $heading ); ?></h2>
@@ -49,9 +49,9 @@ $cta_link   = get_field( 'm02_link' );
 				?>
 				<div class="m02__grid__item">
 					<a href='<?php the_permalink(); ?>' class="m02__portfolio">
-						<?php theme__display_image( $image, 'bg', 'small', "m05__portfolio__img" ); ?>
+						<?php theme__display_image( $image, 'bg', 'small', 'm05__portfolio__img' ); ?>
 						<div class="m02__portfolio__overlay">
-							<h3 class="m02__portfolio__overlay__title"><?php echo esc_html( $heading ); ?></h3>
+							<h3 class="m02__portfolio__overlay__title text-center"><?php echo esc_html( $heading ); ?></h3>
 						</div>
 					</a>
 				</div>

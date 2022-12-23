@@ -32,10 +32,27 @@
 }
 
 .mt{
+	margin-top: $margin-desk;
+
+	@media (max-width: $lap-start) {
+		margin-top: $margin-lap;
+	}
+
+	@media (max-width: $mobile-start) {
+		margin-top: $margin-mobile;
+	}
 }
 
 .mb{
+	margin-bottom: $margin-desk;
 
+	@media (max-width: $lap-start) {
+		margin-bottom: $margin-lap;
+	}
+
+	@media (max-width: $mobile-start) {
+		margin-bottom: $margin-mobile;
+	}
 }
 
 .mt--em{

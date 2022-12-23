@@ -3,7 +3,7 @@
  * Block: M07 - CTA (Call to action)
  *
  * @used:
- *  - single-portfolio.php
+ *  - Gutenberg
  *
  * @package Jafar
  */
@@ -13,7 +13,7 @@ $paragraph = get_field( 'm07_paragraph' );
 $button    = get_field( 'm07_button' );
 ?>
 
-<div class="m07 pt pb break-out">
+<div class="m07 pt pb mt mb module block-element">
 	<div class='container'>
 		<div class="m07__text">
 			<?php if ( $heading ) : ?>

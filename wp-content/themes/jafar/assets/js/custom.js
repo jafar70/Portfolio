@@ -4,13 +4,6 @@ var lazyLoadInstance = new LazyLoad({// Your custom settings go here
 });
 "use strict";
 
-var loader = document.querySelector('.gm03');
-window.addEventListener('load', function () {
-  loader.style.opacity = '0';
-  loader.style.pointerEvents = "none";
-});
-"use strict";
-
 // Site Navigation
 var desktopNav = document.querySelector('.gm01');
 var hamburgerIcon = document.querySelector('.hamburger');

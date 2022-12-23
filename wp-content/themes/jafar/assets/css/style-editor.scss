@@ -28,7 +28,6 @@
  // 4 - GLOBAL MODULES
  @import '4-global-modules/gm01-nav';
  @import '4-global-modules/gm02-mobile-nav';
- @import '4-global-modules/gm03-loader';
  @import '4-global-modules/gm04-footer';
  @import '4-global-modules/gm05-footer-cta';
  
@@ -41,6 +40,7 @@
  @import '5-modules/m06-contact-form';
  @import '5-modules/m07-cta';
  @import '5-modules/m08-page-header';
+ @import '5-modules/m09-portfolio-introduction';
  
  // 6 - PAGES
  @import '6-pages/page-home';
@@ -65,10 +65,11 @@ body {
 }
 
 
-.break-out {
+.block-element {
   left: auto !important;
   width: auto !important;
   margin-left: 0 !important;
+	margin-right: 0 !important;
 }
 
 
