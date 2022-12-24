@@ -21,7 +21,7 @@
       width: 41.666%;
       img{
         width: 100%;
-        box-shadow: -42px 40px 0px 0px #ececec;
+        box-shadow: -42px 40px 0px 0px $grey;
       }
       @media (max-width: $desk-start){
         width: 100%;

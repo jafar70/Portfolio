@@ -40,10 +40,6 @@
 				font-family: $logo-font;
 				font-weight: 500;
 			}
-
-			@media screen and (max-width: 800px) {
-				padding: 20px 0;
-			}
 		}
 
 		&__menu {
@@ -214,7 +210,7 @@
 
 		&.change {
 			.bar1 {
-				transform: rotate(-45deg) translate(-6.5px, 9px);
+				transform: rotate(-45deg) translate(-6px, 9px);
 				background-color: #fff;
 			}
 
@@ -223,7 +219,7 @@
 			}
 
 			.bar3 {
-				transform: rotate(45deg) translate(-6px, -8px);
+				transform: rotate(45deg) translate(-6px,-9px);
 				background-color: #fff;
 			}
 		}

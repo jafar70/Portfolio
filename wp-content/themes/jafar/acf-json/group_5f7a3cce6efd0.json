@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5d1ce64c82eda",
-            "label": "Personal Image",
+            "label": "Image",
             "name": "personal_image",
             "aria-label": "",
             "type": "image",
@@ -17,7 +17,6 @@
                 "id": ""
             },
             "return_format": "array",
-            "preview_size": "medium",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -25,11 +24,12 @@
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "preview_size": "medium"
         },
         {
             "key": "field_5d1ce6d782edb",
-            "label": "About Me Text",
+            "label": "Text Content",
             "name": "about_me_text",
             "aria-label": "",
             "type": "wysiwyg",
@@ -66,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1671755800
+    "modified": 1671851774
 }

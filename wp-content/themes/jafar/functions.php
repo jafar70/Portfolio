@@ -193,33 +193,52 @@ require get_template_directory() . '/functions/functions-image.php';
 /**
  * Creates Portfolio Custom Post Type.
  */
-function portfolio_init() {
-	$args = array(
-		'name'              => 'portfolio',
-		'label'             => 'Portfolio',
-		'singular_label'    => 'Portfolio Item',
-		'public'            => true,
-		'capability_type'   => 'post',
-		'show_ui'           => true,
-		'hierarchical'      => false,
-		'has_archive'       => false,
+$singular_name   = 'Portfolio';
+$collective_name = 'Portfolio';
+$post_type_name  = str_replace( ' ', '-', strtolower( $singular_name ) ); // try to keep the cpt singular. e.g. job, person, case-study
+$slug            = str_replace( ' ', '-', strtolower( $collective_name ) );
+
+register_post_type(
+  $post_type_name,
+  array(
+    'labels'          => array(
+      'name'               => _x( $collective_name, 'post type general name' ),
+      'singular_name'      => _x( $singular_name, 'post type singular name' ),
+      'add_new'            => _x( 'Add New ' . $singular_name, 'book' ),
+      'add_new_item'       => __( 'Add New ' . $singular_name ),
+      'edit_item'          => __( 'Edit ' . $singular_name ),
+      'new_item'           => __( 'Add New ' . $collective_name ),
+      'all_items'          => __( 'View ' . $collective_name ),
+      'view_item'          => __( 'View ' . $collective_name ),
+      'search_items'       => __( 'Search ' . $collective_name ),
+      'not_found'          => __( 'No ' . $collective_name . ' found' ),
+      'not_found_in_trash' => __( 'No ' . $collective_name . ' found in Trash' ),
+      'parent_item_colon'  => '',
+      'menu_name'          => $collective_name,
+    ),
+    'public'          => true,
+    'show_in_rest'    => true, 
+    'show_ui'         => true, // show the admin UI for the CPT even when public is false
+    'query_var'       => true,
+    'rewrite'         => array(
+      'slug'       => $slug,
+      'with_front' => false,
+    ),
+    'capability_type' => 'post',
+    'has_archive'     => false,
+    'hierarchical'    => false,
+    'menu_position'   => null,
 		'menu_icon'         => 'dashicons-art',
 		'taxonomies'        => array( 'topics', 'category' ),
-		'show_in_rest' => true,
-		'rewrite_withfront' => false,
-		array( 'slug' => 'portfolio' ),
-		'supports'          => array(
+    'supports'          => array(
 			'title',
 			'editor',
 			'revisions',
 			'thumbnail',
 			'page-attributes',
 		),
-	);
-
-	register_post_type( 'portfolio', $args );
-}
-add_action( 'init', 'portfolio_init' );
+  )
+);
 
 /*
 ------------------------------------*\
