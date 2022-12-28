@@ -17,6 +17,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+		@media (max-width: $desk-start){
+			flex-direction: column-reverse;
+		}
+
+		&--rev {
+			flex-direction: row-reverse;
+
+			.m03__grid__img {
+				img{
+					box-shadow: 42px 40px 0px 0px $grey;
+				}
+			}
+		}
+
     &__img {
       width: 41.666%;
       img{
@@ -25,12 +39,7 @@
       }
       @media (max-width: $desk-start){
         width: 100%;
-        margin-bottom: 30px;
-
-        img{
-          box-shadow: none;
-        }
-        
+        margin-bottom: 30px;        
       }
     }
 
@@ -38,6 +47,7 @@
       width: calc(58.333% - 30px);
       @media (max-width: $desk-start){
         width: 100%;
+				margin-bottom: 3em;
       }
       p{
         font-weight: 500;

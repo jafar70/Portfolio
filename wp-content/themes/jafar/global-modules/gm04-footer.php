@@ -53,10 +53,10 @@ $twitter_url   = get_field( 'twitter_url', 'option' );
 			</div>
 
 			<div class="gm04__grid__social-media">
-				<a href='mailto:jafsalami@hotmail.co.uk' class="gm04__links" target='_blank'>
+				<a href='mailto:jafsalami@hotmail.co.uk' class="gm04__links gm04__links--email" target='_blank'>
 					<?php echo esc_html( 'jafsalami@hotmail.co.uk' ); ?>
 				</a>
-				<p class='mb-0'><?php echo esc_html( '© ' . gmdate( 'Y' ) . ' Jafar Salami' ); ?></p>
+				<p class='mb--none'><?php echo esc_html( '© ' . gmdate( 'Y' ) . ' Jafar Salami' ); ?></p>
 			</div>
 		</div>
 	</div>

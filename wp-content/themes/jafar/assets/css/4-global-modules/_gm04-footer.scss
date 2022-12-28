@@ -22,7 +22,7 @@
         text-align: center;
       }
       p {
-        margin: -4px 0 15px 0;
+        margin: 0;
         font-size: 14px;
         font-weight: 600;
       }
@@ -48,6 +48,10 @@
       margin-right: 3px;
       vertical-align: text-top;
     }
+
+		&--email {
+			margin: 0 0 0.75rem 0;
+		}
 
     &:hover {
       text-decoration: underline;

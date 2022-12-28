@@ -1,0 +1,16 @@
+{
+	"name": "acf/m10-portfolio-text",
+	"title": "M10 - Portfolio Text",
+	"description": "The portfolio text block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"portfolio",
+		"text"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m10-portfolio-text.php"
+	},
+	"align": "full"
+}
