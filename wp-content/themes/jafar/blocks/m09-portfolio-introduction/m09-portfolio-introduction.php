@@ -12,7 +12,7 @@ $project_url = get_field( 'm09_project_url' );
 $intro       = get_field( 'm09_introduction' );
 ?>
 
-<div class="m09 mt mb module block-element">
+<div class="m09 pt pb mt mb module block-element">
 	<div class="container container">	
 		<div class="m09__grid">
 			<div class="m09__grid__details">

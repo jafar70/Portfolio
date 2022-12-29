@@ -34,7 +34,7 @@ $heading    = get_field( 'm04_title' );
 
 				<div class="m04__grid__item">
 					<div class="m04__card">
-						<?php theme__display_image( $image, 'icon', 'large' ); ?>
+						<?php theme__display_image( $image, 'inline', 'large' ); ?>
 						<h3><?php echo esc_html( $name ); ?></h3>
 					</div>
 				</div>

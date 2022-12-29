@@ -55,14 +55,22 @@ body {
 	@extend .mb;
 
 	+.module {
-		margin-top: $margin-desk;
+		margin-top: -$margin-desk;
 
 		@media (max-width: $lap-start) {
-			margin-top: $margin-lap;
+			margin-top: -$margin-lap;
 		}
 
 		@media (max-width: $mobile-start) {
-			margin-top: $margin-mobile;
+			margin-top: -$margin-mobile;
+		}
+	}
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+	&:not([class]) {
+		+ .module {
+			margin-top: 0;
 		}
 	}
 }

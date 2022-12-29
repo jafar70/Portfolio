@@ -10,7 +10,6 @@
 
 			@media (max-width: $desk-start) {
 				width: 100%;
-				order: 2;
 			}
 		}
 
@@ -20,7 +19,6 @@
 
 			@media (max-width: $desk-start) {
 				width: 100%;
-				order: 1;
 			}
 		}
 	}
@@ -29,3 +27,4 @@
 		margin-bottom: 0.5em;
 	}
 }
+

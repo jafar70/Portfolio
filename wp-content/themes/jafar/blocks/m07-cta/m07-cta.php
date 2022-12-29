@@ -13,7 +13,7 @@ $paragraph = get_field( 'm07_paragraph' );
 $button    = get_field( 'm07_button' );
 ?>
 
-<div class="m07 pt pb mt mb module block-element">
+<div class="m07 pt pb bg-grey color-black mt mb module block-element">
 	<div class='container'>
 		<div class="m07__text">
 			<?php if ( $heading ) : ?>
