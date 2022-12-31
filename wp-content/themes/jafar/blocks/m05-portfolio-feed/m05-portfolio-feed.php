@@ -15,11 +15,7 @@
 		<ul id="filters" class="m05__filters">
 			<li><span class="active filter" data-filter="all"><?php echo esc_html( 'All' ); ?></span></li>
 				<?php
-					$categories = get_categories(
-						array(
-							'hide_empty' => true,
-						)
-					);
+					$categories = get_terms( 'portfolio-category', 'orderby=count&hide_empty=1' );
 					?>
 				<?php foreach ( $categories as $category ) : ?>
 					<li><span class='filter' data-filter=".<?php echo esc_html( $category->slug ); ?>"><?php echo esc_html( $category->name ); ?></span></li>
@@ -49,7 +45,7 @@
 						'title' => $image_title,
 						'alt'   => $alt_text,
 					);
-					$categories  = get_the_category();
+					$categories  = get_the_terms( $post->ID , array( 'portfolio-category') );
 					$slugs       = wp_list_pluck( $categories, 'slug' );
 					$class_names = join( ' ', $slugs );
 					?>
