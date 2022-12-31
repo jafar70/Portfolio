@@ -71,3 +71,28 @@ function theme__display_image( $image, $image_style = 'inline', $image_size = 'l
 		<?php
 		endif;
 }
+
+
+/*  ==========================================================================
+  Remove default image sizes
+  ========================================================================== */
+
+  add_filter( 'intermediate_image_sizes_advanced', 'prefix_remove_default_images' );
+
+  function prefix_remove_default_images( $sizes ) {
+     unset( $sizes['small']); // 150px
+     unset( $sizes['medium']); // 300px
+     unset( $sizes['large']); // 1024px
+     unset( $sizes['medium_large']); // 768px
+     return $sizes;
+  }
+
+/*  ==========================================================================
+  Register Image Sizes
+  ========================================================================== */
+
+  add_image_size( "hero", 2000, 1600, false );
+  add_image_size( "lg", 1200, 1200, false );
+  add_image_size( "md", 1000, 1000, false );
+  add_image_size( "sm", 600, 600, false );
+  add_image_size( "icon", 300, 300, false );

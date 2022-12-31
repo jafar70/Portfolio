@@ -42,14 +42,14 @@ $cta_link   = get_field( 'm02_link' );
 				$image_title = get_the_title( $image_id );
 				$alt_text    = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
 				$image       = array(
-					'sizes' => array( 'small' => $img_url ),
+					'sizes' => array( 'sm' => $img_url ),
 					'title' => $image_title,
 					'alt'   => $alt_text,
 				);
 				?>
 				<div class="m02__grid__item">
 					<a href='<?php the_permalink(); ?>' class="m02__portfolio">
-						<?php theme__display_image( $image, 'bg', 'small', 'm05__portfolio__img' ); ?>
+						<?php theme__display_image( $image, 'bg', 'sm', 'm05__portfolio__img' ); ?>
 						<div class="m02__portfolio__overlay">
 							<h3 class="m02__portfolio__overlay__title text-center mb--none"><?php echo esc_html( $heading ); ?></h3>
 						</div>

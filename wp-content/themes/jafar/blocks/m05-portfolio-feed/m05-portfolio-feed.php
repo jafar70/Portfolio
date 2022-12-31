@@ -41,7 +41,7 @@
 					$image_title = get_the_title( $image_id );
 					$alt_text    = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
 					$image       = array(
-						'sizes' => array( 'small' => $img_url ),
+						'sizes' => array( 'sm' => $img_url ),
 						'title' => $image_title,
 						'alt'   => $alt_text,
 					);
@@ -52,7 +52,7 @@
 					<div class="m05__grid__item <?php echo ( $class_names ) ? ' ' . esc_html( $class_names ) : false; ?> ">
 						<a class="m05__portfolio" href="<?php the_permalink(); ?>">
 							<div class="m05__portfolio__img">
-								<?php theme__display_image( $image, 'bg', 'small' ); ?>
+								<?php theme__display_image( $image, 'bg', 'sm' ); ?>
 							</div>
 							<div class="m05__portfolio__overlay">
 								<h3 class="m05__portfolio__overlay__title text-center">

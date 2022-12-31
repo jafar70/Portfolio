@@ -1,0 +1,16 @@
+{
+	"name": "acf/m11-image",
+	"title": "M11 - Image",
+	"description": "The image block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"image",
+		"picture"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m11-image.php"
+	},
+	"align": "full"
+}

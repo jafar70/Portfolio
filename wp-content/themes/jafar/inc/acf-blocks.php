@@ -39,6 +39,7 @@ function register_acf_blocks() {
 	register_block_type( get_template_directory() . '/blocks/m08-page-header' );
 	register_block_type( get_template_directory() . '/blocks/m09-portfolio-introduction' );
 	register_block_type( get_template_directory() . '/blocks/m10-portfolio-text' );
+	register_block_type( get_template_directory() . '/blocks/m11-image' );
 }
 
 
