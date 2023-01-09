@@ -19,17 +19,13 @@
 				padding: 8px 16px;
 				font-size: 16px;
     		font-weight: 600;
-				color: $copy;
+				color: var(--txt);
 				cursor: pointer;
 				transition: all ease 0.3s;
 
+				&.m05__filters-filter-active,
 				&:hover {
-					background: $black;
-					color: #fff;
-				}
-
-				&.m05__filters-filter-active {
-					background: $black;
+					background: var(--filter--active);
 					color: #fff;
 				}
 			}
@@ -80,7 +76,7 @@
     }
 
     &__overlay{
-      background-color: rgba($color: $copy, $alpha: 0.85);
+      background-color: rgba($color: $black-dark, $alpha: 0.85);
       position: absolute;
       height: 100%;
       width: 100%;

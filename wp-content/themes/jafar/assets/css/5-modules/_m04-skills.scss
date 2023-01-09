@@ -1,5 +1,5 @@
 .m04 {
-	background-color: $grey;
+	background-color: var(--bg--secondary);
 	text-align: center;
 
 	&__tag {
@@ -32,13 +32,14 @@
 	&__card {
 		transition: all 0.2s ease;
 		padding: 2.5rem 0;
-		background-color: #fff;
-		border: 1px solid #fff;
+		background-color: var(--bg);
+		border: 1px solid var(--bg);
 		border-radius: 6px;
 		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 		min-height: 100px;
 
 		.mediaimg {
+			max-height: 50px;
 			max-width: 50px;
 			margin: 0 auto;
 		}

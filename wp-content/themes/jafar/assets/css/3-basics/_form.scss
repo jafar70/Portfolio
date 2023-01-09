@@ -13,7 +13,8 @@
 			padding: 8px 10px;
 			width: 100%; 
 			box-sizing: border-box;
-			border: 1px solid $copy;
+			border: none;
+			background-color: var(--input--bg);
 			border-radius: 3px;
 
 			&:focus {
@@ -28,7 +29,8 @@
 		padding: 8px 10px;
 		width: 100%; 
 		box-sizing: border-box;
-		border: 1px solid $copy;
+		border: none;
+		background-color: var(--input--bg);
 		border-radius: 3px;
 		height: 180px;
 

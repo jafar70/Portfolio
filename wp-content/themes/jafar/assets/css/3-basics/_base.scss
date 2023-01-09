@@ -4,8 +4,8 @@ html{
 
 body {
   font-family: $font;
-  background-color: $white;
-  color: $copy;
+  background-color: var(--bg);
+  color: var(--txt);
   line-height: 1.5;
 	font-size: 16px;
 
@@ -16,7 +16,7 @@ body {
   }
 
   a {
-    color: $copy;
+    color: var(--txt);
   }
 }
 

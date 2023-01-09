@@ -7,8 +7,8 @@
 	transition: all 0.3s ease;
 
 	&--onscroll {
-		background-color: $white;
-		box-shadow: 0 3px 6px 0 rgba(20,20,20,.05);
+		background-color: var(--bg);
+		box-shadow: 0 3px 6px 0 var(--nav--shadow);
 	}
 
 	&--transparent{
@@ -33,7 +33,7 @@
 			text-decoration: none;
 
 			h2 {
-				color: $copy;
+				color: var(--txt);
 				margin: 7px 0;
 				letter-spacing: 6px;
 				font-size: 2rem;
@@ -59,7 +59,7 @@
 							a{
 								#body.single-portfolio &,
 								#body.page-template-page-portfolio & {
-									background-color: $copy;
+									background-color: var(--txt);
 									color: #fff;
 								}
 							}
@@ -67,7 +67,7 @@
 						a {
 							transition: color 0.3s ease 0s;
 							padding: 1rem 1rem;
-							color: $copy;
+							color: var(--txt);
 							transition: all 0.3s ease;
 							font-weight: 600;
 							text-decoration: none;
@@ -168,7 +168,7 @@
 					svg {
 						width: 20px;
 						height: 20px;
-						fill: $copy;
+						fill: var(--txt);
 						transition: all ease 0.2s;
 					}
 
@@ -203,7 +203,7 @@
 		.bar3 {
 			width: 40px;
 			height: 4px;
-			background-color: $copy;
+			background-color: var(--txt);
 			margin: 7px 0;
 			transition: 0.4s;
 		}

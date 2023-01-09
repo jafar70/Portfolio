@@ -1,5 +1,5 @@
 .m03 {
-  background-color: $white;
+  background-color: var(--bg);
 
   &__tag {
     text-align: center;
@@ -26,7 +26,7 @@
 
 			.m03__grid__img {
 				img{
-					box-shadow: 42px 40px 0px 0px $grey;
+					box-shadow: 42px 40px 0px 0px var(--bg--secondary);
 				}
 			}
 		}
@@ -35,7 +35,7 @@
       width: 41.666%;
       img{
         width: 100%;
-        box-shadow: -42px 40px 0px 0px $grey;
+        box-shadow: -42px 40px 0px 0px var(--bg--secondary);
       }
       @media (max-width: $desk-start){
         width: 100%;
@@ -66,21 +66,21 @@
         width: 30px;
         height: 30px;
         transition: all .3s ease;
-        color: #fff;
+        color: var(--txt);
         align-items: center;
         justify-content: center;
 
         svg {
           width: 15px;
           height: 14.4px;
-          fill: $white;
+          fill: var(--txt);
         }
 
         &:hover {
           background-color: darken($color: $red, $amount: 10);
 
           svg {
-            fill: $white;
+            fill: var(--txt);
           }
         }
       }

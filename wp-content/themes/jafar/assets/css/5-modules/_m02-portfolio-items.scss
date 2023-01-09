@@ -1,5 +1,5 @@
 .m02 {
-  background-color: $white;
+  background-color: var(--bg);
   text-align: center;
 
   &__tag {
@@ -57,7 +57,7 @@
     }
 
     &__overlay{
-      background-color: rgba($color: $copy, $alpha: 0.85);
+      background-color: rgba($color: $black-dark, $alpha: 0.85);
       position: absolute;
       height: 100%;
       width: 100%;
