@@ -31,7 +31,7 @@ $twitter_url   = get_field( 'twitter_url', 'option' );
 				<?php } ?>
 
 				<?php if ( $github_url ) { ?>
-					<a class="gm04__links" href="<?php echo esc_url( $instagram_url ); ?>" rel="noopener"  target="_blank" aria-label="Github">
+					<a class="gm04__links" href="<?php echo esc_url( $github_url ); ?>" rel="noopener"  target="_blank" aria-label="Github">
 					<?php get_template_part( 'assets/img/inline', 'github.svg' ); ?>
 					<?php echo esc_html( 'Github' ); ?>
 					</a>
