@@ -305,3 +305,15 @@ add_filter(
 	10,
 	2
 );
+
+
+// Add custom validation to form
+add_filter( 'gform_field_validation_2_4', 'validate_input_2_4', 10, 4 );
+function validate_input_2_4( $result, $value, $form, $field ) {
+	$nourl_pattern = '(http|https)';
+	if ( preg_match( $nourl_pattern, $value ) ) {
+		$result['is_valid'] = false;
+		$result['message']  = 'Message can not contain website addresses.';
+	}
+	return $result;
+}
