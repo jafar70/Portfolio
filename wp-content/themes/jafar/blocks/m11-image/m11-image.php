@@ -21,6 +21,6 @@ if ( 'small' === $image_width ) {
 ?>
 <div class="m10 pt pb module block-element">
 	<div class="<?php echo esc_attr( $container ); ?>">	
-		<?php theme__display_image( $image, 'inline', 'lg' ); ?>
+		<?php display_image( $image, 'inline', 'lg' ); ?>
 	</div>
 </div>

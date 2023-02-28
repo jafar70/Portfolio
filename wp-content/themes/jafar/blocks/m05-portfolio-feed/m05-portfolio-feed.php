@@ -52,7 +52,7 @@
 					<div class="m05__grid__item <?php echo ( $class_names ) ? ' ' . esc_html( $class_names ) : false; ?> ">
 						<a class="m05__portfolio" href="<?php the_permalink(); ?>">
 							<div class="m05__portfolio__img">
-								<?php theme__display_image( $image, 'bg', 'sm' ); ?>
+								<?php display_image( $image, 'bg', 'sm' ); ?>
 							</div>
 							<div class="m05__portfolio__overlay">
 								<h3 class="m05__portfolio__overlay__title text-center">

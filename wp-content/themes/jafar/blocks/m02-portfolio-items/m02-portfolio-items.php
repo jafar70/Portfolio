@@ -49,7 +49,7 @@ $cta_link   = get_field( 'm02_link' );
 				?>
 				<div class="m02__grid__item">
 					<a href='<?php the_permalink(); ?>' class="m02__portfolio">
-						<?php theme__display_image( $image, 'bg', 'sm', 'm05__portfolio__img' ); ?>
+						<?php display_image( $image, 'bg', 'sm', 'm05__portfolio__img' ); ?>
 						<div class="m02__portfolio__overlay">
 							<h3 class="m02__portfolio__overlay__title text-center mb--none"><?php echo esc_html( $heading ); ?></h3>
 						</div>

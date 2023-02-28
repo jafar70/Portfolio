@@ -46,15 +46,21 @@ function register_acf_blocks() {
 /**
  * Allowed theme block types.
  */
-// function allowed_block_types() {
-// return array(
-// 'core/image',
-// 'core/group',
-// 'core/table',
-// 'core/paragraph',
-// 'core/quote',
-// 'core/heading',
-// 'core/list',
-// );
-// }
-// add_filter( 'allowed_block_types', 'allowed_block_types' );.
+function allowed_block_types() {
+	return array(
+		'core/paragraph',
+		'core/heading',
+		'acf/m01-home-banner',
+		'acf/m02-portfolio-items',
+		'acf/m03-text-with-image',
+		'acf/m04-skills',
+		'acf/m05-portfolio-feed',
+		'acf/m06-contact-form',
+		'acf/m07-cta',
+		'acf/m08-page-header',
+		'acf/m09-portfolio-introduction',
+		'acf/m10-portfolio-text',
+		'acf/m11-image',
+	);
+}
+add_filter( 'allowed_block_types', 'allowed_block_types' );

@@ -23,7 +23,7 @@ $twitter_url       = get_field( 'twitter_url', 'option' );
 		<div class="m03__grid <?php echo ( 'left' === $text_position ) ? 'm03__grid--rev' : false; ?>">
 			<div class="m03__grid__img">
 			<?php if ( $profile_image ) : ?>
-				<?php theme__display_image( $profile_image, 'inline', 'lg' ); ?>
+				<?php display_image( $profile_image, 'inline', 'lg' ); ?>
 			<?php endif; ?>
 
 			</div>
