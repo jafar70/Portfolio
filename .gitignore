@@ -1,0 +1,66 @@
+# Core WordPress
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config.php
+/wp-config-sample.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+/wp-admin/
+/wp-includes/
+/wp-content/db.php
+/wp-content/languages
+/wp-content/upgrade
+/wp-content/uploads
+/wp-content/uploads-webpc
+
+# Theme
+/wp-content/themes/twentyseventeen
+/wp-content/themes/twentynineteen
+/wp-content/themes/twentytwenty
+/wp-content/themes/*/_cache
+/wp-content/themes/*/_dist
+/wp-content/themes/*/style.css
+/wp-content/themes/*/style.css.map
+/wp-content/themes/*/style.min.css
+/wp-content/themes/*/style.min.css.map
+/wp-content/themes/*/style-*.css
+/wp-content/themes/*/style-*.css.map
+/wp-content/themes/*/style-*.min.css
+/wp-content/themes/*/style-*.min.css.map
+
+# Plugins
+/wp-content/mu-plugins/*
+/wp-content/plugins/*
+
+# npm & composer
+node_modules
+package-lock.json
+vendor
+composer.lock
+
+# Misc
+*~
+.DS_Store
+.cvs
+.hooks
+.htaccess
+.svn
+.vscode
+*.bak
+*.data
+*.swp
+backstop_data
+debug.log
+env
