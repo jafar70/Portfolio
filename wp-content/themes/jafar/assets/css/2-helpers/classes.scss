@@ -1,0 +1,104 @@
+.pt{
+	padding-top: $padding-desk;
+
+	@media (max-width: $lap-start) {
+		padding-top: $padding-lap;
+	}
+
+	@media (max-width: $mobile-start) {
+		padding-top: $padding-mobile;
+	}
+
+}
+
+.pb{
+	padding-bottom: $padding-desk;
+
+	@media (max-width: $lap-start) {
+		padding-bottom: $padding-lap;
+	}
+
+	@media (max-width: $mobile-start) {
+		padding-bottom: $padding-mobile;
+	}
+}
+
+.pt--em{
+	padding-top: 1em;
+}
+
+.pb--em{
+	padding-bottom: 1em;
+}
+
+.mt{
+	margin-top: $margin-desk;
+
+	@media (max-width: $lap-start) {
+		margin-top: $margin-lap;
+	}
+
+	@media (max-width: $mobile-start) {
+		margin-top: $margin-mobile;
+	}
+}
+
+.mb{
+	margin-bottom: $margin-desk;
+
+	@media (max-width: $lap-start) {
+		margin-bottom: $margin-lap;
+	}
+
+	@media (max-width: $mobile-start) {
+		margin-bottom: $margin-mobile;
+	}
+}
+
+.mt--em{
+	margin-top: 1em;
+}
+
+.mb--em{
+	margin-bottom: 1em;
+}
+
+.m--none {
+  margin: 0;
+}
+
+.mt--none {
+  margin-top: 0;
+}
+
+.mb--none {
+  margin-bottom: 0;
+}
+
+.bg-white {
+	background-color: $white;
+}
+
+.bg-grey{
+	background-color: $grey;
+}
+
+.bg-black{
+	background-color: $black;
+}
+
+.flex {
+	display: flex
+}
+
+.flex-wrap {
+	flex-wrap: wrap
+}
+
+.color-white {
+	color: $white;
+}
+
+.color-black {
+	color: $black;
+}

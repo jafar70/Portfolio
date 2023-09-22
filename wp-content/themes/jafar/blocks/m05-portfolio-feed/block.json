@@ -1,0 +1,16 @@
+{
+	"name": "acf/m05-portfolio-feed",
+	"title": "M05 - Portfolio Feed",
+	"description": "The portfolio listings block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"portfolio",
+		"feed"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m05-portfolio-feed.php"
+	},
+	"align": "full"
+}

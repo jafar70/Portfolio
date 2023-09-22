@@ -1,0 +1,13 @@
+/** Custom admin styles Stylesheet for small admin CSS updates. */
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+@media (min-width: 782px) { .edit-post-layout.is-sidebar-opened .edit-post-layout__content { margin-right: 470px; }
+  .edit-post-layout.is-sidebar-opened .edit-post-sidebar, .edit-post-layout.is-sidebar-opened .edit-post-plugin-sidebar__sidebar-layout .edit-post-toggle-publish-panel { width: 470px; } }
+
+@media (min-width: 1500px) { .edit-post-layout.is-sidebar-opened .edit-post-layout__content { margin-right: 470px; }
+  .edit-post-layout.is-sidebar-opened .edit-post-sidebar, .edit-post-layout.is-sidebar-opened .edit-post-plugin-sidebar__sidebar-layout .edit-post-toggle-publish-panel { width: 470px; } }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUtYWRtaW4uY3NzIiwic291cmNlcyI6WyJzdHlsZS1hZG1pbi5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGtFQUdHO0FBRUg7O2dFQUVnRTtBQUNoRSxNQUFNLEVBQUUsU0FBUyxFQUFFLEtBQUssSUFDdEIsQUFBQSxpQkFBaUIsQUFBQSxrQkFBa0IsQ0FBQywwQkFBMEIsQ0FBQyxFQUM3RCxZQUFZLEVBQUUsS0FBSyxHQUNwQjtFQUNELEFBQUEsaUJBQWlCLEFBQUEsa0JBQWtCLENBQUMsa0JBQWtCLEVBQ3RELGlCQUFpQixBQUFBLGtCQUFrQixDQUFDLHlDQUF5QyxDQUM3RSwrQkFBK0IsQ0FBQyxFQUM5QixLQUFLLEVBQUUsS0FBSyxHQUNiOztBQUdILE1BQU0sRUFBRSxTQUFTLEVBQUUsTUFBTSxJQUN2QixBQUFBLGlCQUFpQixBQUFBLGtCQUFrQixDQUFDLDBCQUEwQixDQUFDLEVBQzdELFlBQVksRUFBRSxLQUFLLEdBQ3BCO0VBQ0QsQUFBQSxpQkFBaUIsQUFBQSxrQkFBa0IsQ0FBQyxrQkFBa0IsRUFDdEQsaUJBQWlCLEFBQUEsa0JBQWtCLENBQUMseUNBQXlDLENBQzdFLCtCQUErQixDQUFDLEVBQzlCLEtBQUssRUFBRSxLQUFLLEdBQ2IifQ== */
+
+/*# sourceMappingURL=style-admin.css.map */

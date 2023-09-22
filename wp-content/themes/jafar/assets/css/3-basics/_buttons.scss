@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  background-color: $red;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+	padding: 0.75rem 1.5rem;
+	border-radius: 4.25em;
+
+  &:hover {
+		background-color: darken($color: $red, $amount: 10);
+		box-shadow: 7px 7px 18px -4px rgba($color: $red, $alpha: 0.5);
+  }
+
+  &--disabled {
+    opacity: .5;
+    cursor: no-drop;
+  }
+}

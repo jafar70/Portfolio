@@ -1,0 +1,110 @@
+//	Headings
+
+h1,.huge {
+	font-size: 60px;
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 50px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 36px;
+	}
+}
+
+h2,.alpha {
+  font-size: 40px;
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 36px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 27px;
+	}
+}
+
+h3,.beta {
+  font-size: 32px;
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 27px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 23px;
+	}
+}
+
+h4,.gamma {
+  font-size: 24px;
+
+	@media only screen and (max-width: $desk-start) {
+		font-size: 22px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 20px;
+	}
+}
+
+h5,.delta {
+  font-size: 20px;
+  
+	@media only screen and (max-width: $desk-start) {
+		font-size: 18px;
+	}
+
+	@media only screen and (max-width: $lap-start) {
+		font-size: 18px;
+	}
+}
+
+h6,.epsilon {
+  font-size: 14px;
+  font-size: .875rem;
+  line-height: 1.35714
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.font-reg {
+	font-weight: 400;
+}
+
+.font-semibold {
+	font-weight: 600;
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.color-white{
+	color: $white;
+}
+
+.color-black {
+	color: $black;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}

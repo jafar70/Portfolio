@@ -1,0 +1,19 @@
+.m08 {
+	padding: 10rem 0 0;
+
+	@media (max-width: $lap-start) {
+		padding: 8rem 0 0;
+	}
+
+	@media (max-width: $mobile-start) {
+		padding: 8rem 0 0;
+	}
+
+	&__title {
+		
+	}
+
+	+.module{
+		margin-top: 0 !important;
+	}
+}

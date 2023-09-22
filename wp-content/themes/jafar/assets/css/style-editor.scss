@@ -1,0 +1,87 @@
+/**
+ * Custom Gutenberg editor styles
+ * Stylesheet for small editor CSS updates.
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Nunito+Sans:wght@400%3B600%3B700%3B800&display=swap');
+ // 1 - TOOLS
+ @import '1-tools/normalize';
+ 
+ 
+ // 2 - HELPERS
+ @import '2-helpers/variables';
+ @import '2-helpers/functions';
+ @import '2-helpers/mixins';
+ @import '2-helpers/classes';
+ 
+ // 3 - BASICS
+ @import '3-basics/base';
+ @import '3-basics/buttons';
+ @import '3-basics/links';
+ @import '3-basics/selection-colors';
+ @import '3-basics/typography';
+ @import '3-basics/container';
+ @import '3-basics/images';
+ @import '3-basics/form';
+ 
+ 
+ // 4 - GLOBAL MODULES
+ @import '4-global-modules/gm01-nav';
+ @import '4-global-modules/gm02-mobile-nav';
+ @import '4-global-modules/gm04-footer';
+ @import '4-global-modules/gm05-footer-cta';
+ 
+ // 5 - MODULES
+ @import '5-modules/m01-home-hero';
+ @import '5-modules/m02-portfolio-items';
+ @import '5-modules/m03-about-me';
+ @import '5-modules/m04-skills';
+ @import '5-modules/m05-portfolio';
+ @import '5-modules/m06-contact-form';
+ @import '5-modules/m07-cta';
+ @import '5-modules/m08-page-header';
+ @import '5-modules/m09-portfolio-introduction';
+ @import '5-modules/m10-portfolio-text';
+
+ // 6 - PAGES
+ @import '6-pages/page-home';
+
+// Prevents WYSIWYG's from having no editor padding.
+body {
+  margin: 8px;
+}
+
+// Makes ACF modules full width in editor.
+.wp-block {
+  max-width: 624px;
+}
+
+[data-type^='acf'],
+[data-type^='core/group'] {
+  max-width: none;
+}
+
+[data-type^='acf'] a {
+  pointer-events: none;
+}
+
+
+.block-element {
+  left: auto !important;
+  width: auto !important;
+  margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+
+img.lazy {
+	opacity: 1;
+}
+
+.m02__product {
+	text-decoration: none !important;
+}
+
+body {
+	background-color: $white;
+}

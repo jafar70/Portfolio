@@ -1,0 +1,37 @@
+.m06 {
+	&__title {
+		&__text {
+
+		}
+	}
+
+	&__grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 50px;
+
+		&__text {
+			width: calc(40% - 40px);
+
+			@media (max-width: $desk-start) {
+				width: auto;
+				margin-bottom: 20px;
+			}
+		}
+
+		&__form {
+			width: calc(60% - 40px);
+			@media (max-width: $desk-start) {
+				width: auto;
+			}
+		}
+	}
+
+	&__social {
+		
+		&__img {
+			width: 30px;
+		}
+	}
+}

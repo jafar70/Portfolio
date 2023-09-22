@@ -1,0 +1,16 @@
+{
+	"name": "acf/m08-page-header",
+	"title": "M08 - Page Header",
+	"description": "The page header block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"page",
+		"header"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m08-page-header.php"
+	},
+	"align": "full"
+}

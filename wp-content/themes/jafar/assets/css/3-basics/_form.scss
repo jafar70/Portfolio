@@ -1,0 +1,93 @@
+.gform_fields{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	input {
+		&[type=text]{
+			width: 100%;
+			font-size: 16px;
+			padding: 8px 10px;
+			width: 100%; 
+			box-sizing: border-box;
+			border: none;
+			background-color: var(--input--bg);
+			border-radius: 3px;
+
+			&:focus {
+				outline: initial;
+			}
+		}
+	}
+
+	textarea {
+		width: 100%;
+		font-size: 16px;
+		padding: 8px 10px;
+		width: 100%; 
+		box-sizing: border-box;
+		border: none;
+		background-color: var(--input--bg);
+		border-radius: 3px;
+		height: 180px;
+
+		&:focus {
+			outline: initial;
+		}
+	}
+
+	.gfield {
+		margin-bottom: 20px;
+		width: 100%;
+
+		&_error {
+			input,
+			textarea {
+				border: 1px solid $error-red;
+			}
+
+			.gfield_description {
+				color: $error-red;
+				font-size: 13px;
+        margin-top: 6px;
+			}
+		}
+
+		label {
+			font-weight: 500;
+			margin-bottom: 5px;
+			display: block;
+		}
+
+		&__half {
+			width: calc(50% - 10px);
+
+			@media (max-width: $mobile-start) {
+				width: 100%;
+			}
+
+			input {
+				&[type=text]{
+					
+				}
+			}
+		}
+
+	}
+
+}
+
+.validation_error {
+	color: $error-red;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+input {
+	&[type=submit] {
+		@extend .button;
+	 }
+}

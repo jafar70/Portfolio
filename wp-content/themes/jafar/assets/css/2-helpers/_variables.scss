@@ -1,0 +1,68 @@
+// Font Family
+$font: "Nunito Sans", sans-serif;
+$logo-font: "Poppins", sans-serif;
+
+// Colors
+$white: #fff;
+$grey: #f7f7f7;
+$black: #111;
+$black-light: #202020;
+$black-dark: #000;
+$red: #b20107;
+$error-red: #ff0000;
+
+// Breakpoints
+$mobile-start: 450px;
+$lap-start: 669px;
+$desk-start: 960px;
+
+// Spacing
+$padding-desk: 6rem;
+$padding-lap: 5rem;
+$padding-mobile: 4rem;
+
+$margin-desk: 6rem;
+$margin-lap: 5rem;
+$margin-mobile: 4rem;
+
+:root {
+	/* light color scheme */
+	--bg--light: #{$white};
+	--bg--secondary--light: #{$grey};
+	--txt--light: #{$black};
+	--nav--shadow--light: rgba(20, 20, 20, 0.05);
+	--filter--active--light: #{$black};
+	--input--bg--light: #{$grey};
+
+	/* dark color scheme */
+	--bg--dark: #{$black};
+	--bg--secondary--dark: #{$black-light};
+	--txt--dark: #{$white};
+	--nav--shadow--dark: rgba(191, 191, 191, 0.05);
+	--filter--active--dark: #{$black-light};
+	--input--bg--dark: #{$black-light};
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: var(--bg--light);
+		--bg--secondary: var(--bg--secondary--light);
+		--txt: var(--txt--light);
+		--nav--shadow: var(--nav--shadow--light);
+		--filter--active: var(--filter--active--light);
+		--input--bg: var(--input--bg--light);
+		color-scheme: light;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: var(--bg--dark);
+		--bg--secondary: var(--bg--secondary--dark);
+		--txt: var(--txt--dark);
+		--nav--shadow: var(--nav--shadow--dark);
+		--filter--active: var(--filter--active--dark);
+		--input--bg: var(--input--bg--dark);
+		color-scheme: dark;
+	}
+}

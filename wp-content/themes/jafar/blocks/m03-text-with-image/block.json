@@ -1,0 +1,17 @@
+{
+	"name": "acf/m03-text-with-image",
+	"title": "M03 - Text with image",
+	"description": "The text with image block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"text",
+		"with",
+		"image"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m03-text-with-image.php"
+	},
+	"align": "full"
+}

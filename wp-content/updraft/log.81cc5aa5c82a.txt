@@ -1,0 +1,383 @@
+0000.003 () Opened log file at time: Fri, 22 Sep 2023 11:11:32 +0000 on https://jafarsalami.local
+0000.003 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.22.22.25 WP: 6.3.1 PHP: 8.1.9 (fpm-fcgi, Darwin Jafars-MacBook-Pro.local 22.6.0 Darwin Kernel Version 22.6.0: Wed Jul  5 22:21:56 PDT 2023; root:xnu-8796.141.3~6/RELEASE_X86_64 x86_64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.4M | 6M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.003 () Free space on disk containing Updraft's temporary directory: 764268.9 MB
+0000.026 () Restore setup, now closing connection and starting restore over AJAX.
+0000.037 () Opened log file at time: Fri, 22 Sep 2023 11:11:32 +0000 on https://jafarsalami.local
+0000.039 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 2.22.22.25 WP: 6.3.1 PHP: 8.1.9 (fpm-fcgi, Darwin Jafars-MacBook-Pro.local 22.6.0 Darwin Kernel Version 22.6.0: Wed Jul  5 22:21:56 PDT 2023; root:xnu-8796.141.3~6/RELEASE_X86_64 x86_64) MySQL: 8.0.16 (max packet size=33554432) WPLANG: en_US Server: nginx/1.16.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.7M | 6M) multisite: N openssl: OpenSSL 1.1.1q  5 Jul 2022 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.040 () Free space on disk containing Updraft's temporary directory: 764268.7 MB
+0000.040 () Ensuring WP_Filesystem is setup for a restore
+0000.041 () WP_Filesystem is setup and ready for a restore
+0000.044 () Restore job started. Entities to restore: plugins, themes, uploads, db. Restore options: {"updraft_restorer_replacesiteurl":"1","include_unspecified_tables":false,"tables_to_restore":["pnmcr_options","pnmcr_users","pnmcr_usermeta","pnmcr_actionscheduler_actions","pnmcr_actionscheduler_claims","pnmcr_actionscheduler_groups","pnmcr_actionscheduler_logs","pnmcr_commentmeta","pnmcr_comments","pnmcr_itsec_bans","pnmcr_itsec_dashboard_events","pnmcr_itsec_distributed_storage","pnmcr_itsec_fingerprints","pnmcr_itsec_geolocation_cache","pnmcr_itsec_lockouts","pnmcr_itsec_logs","pnmcr_itsec_mutexes","pnmcr_itsec_opaque_tokens","pnmcr_itsec_temp","pnmcr_itsec_user_groups","pnmcr_links","pnmcr_postmeta","pnmcr_posts","pnmcr_term_relationships","pnmcr_term_taxonomy","pnmcr_termmeta","pnmcr_terms","pnmcr_aiowps_events","pnmcr_aiowps_failed_logins","pnmcr_aiowps_global_meta","pnmcr_aiowps_login_activity","pnmcr_aiowps_login_lockdown","pnmcr_aiowps_permanent_block","pnmcr_ewwwio_images","pnmcr_ewwwio_queue","pnmcr_gf_draft_submissions","pnmcr_gf_entry","pnmcr_gf_entry_meta","pnmcr_gf_entry_notes","pnmcr_gf_form","pnmcr_gf_form_meta","pnmcr_gf_form_revisions","pnmcr_gf_form_view","pnmcr_gf_rest_api_keys","pnmcr_litespeed_img_optm","pnmcr_litespeed_img_optming","pnmcr_smush_dir_images","pnmcr_wpmailsmtp_debug_events","pnmcr_wpmailsmtp_tasks_meta","pnmcr_yoast_indexable","pnmcr_yoast_indexable_hierarchy","pnmcr_yoast_migrations","pnmcr_yoast_primary_term","pnmcr_yoast_seo_links","pnmcr_yoast_seo_meta"],"tables_to_skip":[],"include_unspecified_plugins":false,"plugins_to_restore":["advanced-custom-fields-pro","autoptimize","better-wp-security","gravityforms","optimole-wp","post-types-order","taxonomy-terms-order","updraftplus","wordpress-seo","wp-mail-smtp"],"plugins_to_skip":[],"include_unspecified_themes":false,"themes_to_restore":["jafar"],"themes_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.044 () PHP event: code E_DEPRECATED: rtrim(): Passing null to parameter #1 ($string) of type string is deprecated (line 2827, wp-includes/formatting.php)
+0000.045 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.048 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.049 () Entity: db
+0000.049 () restore_backup(backup_file=backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-db.gz, type=db, info=a:0:{}, last_one=)
+0000.049 () Unpacking backup... (backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-db.gz, 1.4 Mb)
+0000.050 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.051 () Database successfully unpacked
+0000.052 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.052 () Using direct MySQL access; value of use_mysqli is: 1
+0000.052 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION
+0000.078 () Max packet size: 32 MB
+0000.078 () Entering maintenance mode
+0000.078 () Enabling Maintenance mode&#8230;
+0000.087 () Backup of: https://jafarsalami.co.uk
+0000.098 () Content URL: https://jafarsalami.co.uk/wp-content
+0000.098 () Uploads URL: https://jafarsalami.co.uk/wp-content/uploads
+0000.098 () Old table prefix: pnmcr_
+0000.098 () Old ABSPATH: /home/u903386965/domains/jafarsalami.co.uk/public_html/
+0000.098 () Site information: multisite=0
+0000.098 () Site information: sql_mode=NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+0000.099 () New table prefix: v8_
+0000.102 () Processing table (InnoDB): pnmcr_options - will restore as: v8_options
+0000.227 () Atomic restore: dropping original table (wp_options)
+0000.232 () Atomic restore: renaming new table (v8_options) to final table name (wp_options)
+0000.237 () Restoring prior UD configuration (table: wp_options; keys: 98)
+0000.278 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.278 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.278 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.278 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.278 () PHP event: code E_DEPRECATED: substr(): Passing null to parameter #1 ($string) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.278 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 169, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.285 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.289 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.290 () PHP event: code E_DEPRECATED: preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated (line 48, wp-content/plugins/updraftplus/includes/class-manipulation-functions.php)
+0000.306 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, wp-content/plugins/updraftplus/options.php)
+0000.307 () PHP event: code E_DEPRECATED: preg_match(): Passing null to parameter #2 ($subject) of type string is deprecated (line 214, wp-content/plugins/updraftplus/options.php)
+0000.345 () Table prefix has changed: changing options table field(s) accordingly (options)
+0000.346 () Options table fields changed OK
+0000.348 () Search and replacing table: wp_options: rows: 712
+0000.383 () Incomplete object detected in database: Gravity_Forms\Gravity_Forms\Telemetry\GF_Telemetry_Snapshot_Data; Search and replace will be skipped for these entries
+0000.388 () Incomplete object detected in database: Gravity_Forms\Gravity_Forms\License\GF_License_API_Response; Search and replace will be skipped for these entries
+0000.396 () Processing table (InnoDB): pnmcr_users - will restore as: v8_users
+0000.408 () Atomic restore: dropping original table (wp_users)
+0000.412 () Atomic restore: renaming new table (v8_users) to final table name (wp_users)
+0000.419 () Search and replacing table: wp_users: rows: 1
+0000.419 () Processing table (InnoDB): pnmcr_usermeta - will restore as: v8_usermeta
+0000.432 () Atomic restore: dropping original table (wp_usermeta)
+0000.436 () Atomic restore: renaming new table (v8_usermeta) to final table name (wp_usermeta)
+0000.441 () Table prefix has changed: changing usermeta table field(s) accordingly
+0000.442 () Usermeta table fields changed OK
+0000.443 () Search and replacing table: wp_usermeta: rows: 61
+0000.445 () Processing table (InnoDB): pnmcr_actionscheduler_actions - will restore as: v8_actionscheduler_actions
+0000.461 () Atomic restore: dropping original table (wp_actionscheduler_actions)
+0000.461 () Atomic restore: renaming new table (v8_actionscheduler_actions) to final table name (wp_actionscheduler_actions)
+0000.468 () Search and replacing table: wp_actionscheduler_actions: rows: 1
+0000.469 () Incomplete object detected in database: ActionScheduler_NullSchedule; Search and replace will be skipped for these entries
+0000.469 () Processing table (InnoDB): pnmcr_actionscheduler_claims - will restore as: v8_actionscheduler_claims
+0000.476 () Atomic restore: dropping original table (wp_actionscheduler_claims)
+0000.477 () Atomic restore: renaming new table (v8_actionscheduler_claims) to final table name (wp_actionscheduler_claims)
+0000.483 () Search and replacing table: wp_actionscheduler_claims: rows: 0
+0000.483 () Processing table (InnoDB): pnmcr_actionscheduler_groups - will restore as: v8_actionscheduler_groups
+0000.491 () Atomic restore: dropping original table (wp_actionscheduler_groups)
+0000.492 () Atomic restore: renaming new table (v8_actionscheduler_groups) to final table name (wp_actionscheduler_groups)
+0000.497 () Search and replacing table: wp_actionscheduler_groups: rows: 2
+0000.497 () Processing table (InnoDB): pnmcr_actionscheduler_logs - will restore as: v8_actionscheduler_logs
+0000.507 () Atomic restore: dropping original table (wp_actionscheduler_logs)
+0000.507 () Atomic restore: renaming new table (v8_actionscheduler_logs) to final table name (wp_actionscheduler_logs)
+0000.513 () Search and replacing table: wp_actionscheduler_logs: rows: 3
+0000.513 () Processing table (InnoDB): pnmcr_commentmeta - will restore as: v8_commentmeta
+0000.522 () Atomic restore: dropping original table (wp_commentmeta)
+0000.525 () Atomic restore: renaming new table (v8_commentmeta) to final table name (wp_commentmeta)
+0000.530 () Search and replacing table: wp_commentmeta: rows: 0
+0000.530 () Processing table (InnoDB): pnmcr_comments - will restore as: v8_comments
+0000.541 () Atomic restore: dropping original table (wp_comments)
+0000.546 () Atomic restore: renaming new table (v8_comments) to final table name (wp_comments)
+0000.553 () Search and replacing table: wp_comments: rows: 0
+0000.553 () Processing table (InnoDB): pnmcr_itsec_bans - will restore as: v8_itsec_bans
+0000.563 () Atomic restore: dropping original table (wp_itsec_bans)
+0000.564 () Atomic restore: renaming new table (v8_itsec_bans) to final table name (wp_itsec_bans)
+0000.570 () Search and replacing table: wp_itsec_bans: rows: 0
+0000.570 () Processing table (InnoDB): pnmcr_itsec_dashboard_events - will restore as: v8_itsec_dashboard_events
+0000.579 () Atomic restore: dropping original table (wp_itsec_dashboard_events)
+0000.580 () Atomic restore: renaming new table (v8_itsec_dashboard_events) to final table name (wp_itsec_dashboard_events)
+0000.585 () Search and replacing table: wp_itsec_dashboard_events: rows: 2
+0000.585 () Processing table (InnoDB): pnmcr_itsec_distributed_storage - will restore as: v8_itsec_distributed_storage
+0000.649 () Atomic restore: dropping original table (wp_itsec_distributed_storage)
+0000.650 () Atomic restore: renaming new table (v8_itsec_distributed_storage) to final table name (wp_itsec_distributed_storage)
+0000.655 () Search and replacing table: wp_itsec_distributed_storage: rows: 5
+0000.703 () Processing table (InnoDB): pnmcr_itsec_fingerprints - will restore as: v8_itsec_fingerprints
+0000.748 () Atomic restore: dropping original table (wp_itsec_fingerprints)
+0000.749 () Atomic restore: renaming new table (v8_itsec_fingerprints) to final table name (wp_itsec_fingerprints)
+0000.755 () Search and replacing table: wp_itsec_fingerprints: rows: 0
+0000.756 () Processing table (InnoDB): pnmcr_itsec_geolocation_cache - will restore as: v8_itsec_geolocation_cache
+0000.764 () Atomic restore: dropping original table (wp_itsec_geolocation_cache)
+0000.765 () Atomic restore: renaming new table (v8_itsec_geolocation_cache) to final table name (wp_itsec_geolocation_cache)
+0000.772 () Search and replacing table: wp_itsec_geolocation_cache: rows: 0
+0000.772 () Processing table (InnoDB): pnmcr_itsec_lockouts - will restore as: v8_itsec_lockouts
+0000.784 () Atomic restore: dropping original table (wp_itsec_lockouts)
+0000.785 () Database queries processed: 50 in 0.73 seconds
+0000.785 () Atomic restore: renaming new table (v8_itsec_lockouts) to final table name (wp_itsec_lockouts)
+0000.791 () Search and replacing table: wp_itsec_lockouts: rows: 0
+0000.792 () Processing table (InnoDB): pnmcr_itsec_logs - will restore as: v8_itsec_logs
+0001.030 () Atomic restore: dropping original table (wp_itsec_logs)
+0001.032 () Atomic restore: renaming new table (v8_itsec_logs) to final table name (wp_itsec_logs)
+0001.053 () Search and replacing table: wp_itsec_logs: rows: 887
+0001.565 () Incomplete object detected in database: ITSEC_Job; Search and replace will be skipped for these entries
+0001.700 () Processing table (InnoDB): pnmcr_itsec_mutexes - will restore as: v8_itsec_mutexes
+0001.708 () Atomic restore: dropping original table (wp_itsec_mutexes)
+0001.708 () Atomic restore: renaming new table (v8_itsec_mutexes) to final table name (wp_itsec_mutexes)
+0001.714 () Search and replacing table: wp_itsec_mutexes: rows: 0
+0001.714 () Processing table (InnoDB): pnmcr_itsec_opaque_tokens - will restore as: v8_itsec_opaque_tokens
+0001.729 () Atomic restore: dropping original table (wp_itsec_opaque_tokens)
+0001.730 () Atomic restore: renaming new table (v8_itsec_opaque_tokens) to final table name (wp_itsec_opaque_tokens)
+0001.737 () Search and replacing table: wp_itsec_opaque_tokens: rows: 0
+0001.737 () Processing table (InnoDB): pnmcr_itsec_temp - will restore as: v8_itsec_temp
+0001.748 () Atomic restore: dropping original table (wp_itsec_temp)
+0001.749 () Atomic restore: renaming new table (v8_itsec_temp) to final table name (wp_itsec_temp)
+0001.757 () Search and replacing table: wp_itsec_temp: rows: 0
+0001.757 () Processing table (InnoDB): pnmcr_itsec_user_groups - will restore as: v8_itsec_user_groups
+0001.767 () Atomic restore: dropping original table (wp_itsec_user_groups)
+0001.768 () Atomic restore: renaming new table (v8_itsec_user_groups) to final table name (wp_itsec_user_groups)
+0001.775 () Search and replacing table: wp_itsec_user_groups: rows: 10
+0001.775 () Processing table (InnoDB): pnmcr_links - will restore as: v8_links
+0001.788 () Atomic restore: dropping original table (wp_links)
+0001.794 () Atomic restore: renaming new table (v8_links) to final table name (wp_links)
+0001.803 () Search and replacing table: wp_links: rows: 0
+0001.803 () Processing table (InnoDB): pnmcr_postmeta - will restore as: v8_postmeta
+0002.007 () Atomic restore: dropping original table (wp_postmeta)
+0002.010 () Atomic restore: renaming new table (v8_postmeta) to final table name (wp_postmeta)
+0002.023 () Search and replacing table: wp_postmeta: rows: 146
+0002.048 () Processing table (InnoDB): pnmcr_posts - will restore as: v8_posts
+0002.089 () Atomic restore: dropping original table (wp_posts)
+0002.092 () Atomic restore: renaming new table (v8_posts) to final table name (wp_posts)
+0002.097 () Skipping search/replace on GUID column in posts table
+0002.098 () Search and replacing table: wp_posts: rows: 409
+0002.151 () Processing table (InnoDB): pnmcr_term_relationships - will restore as: v8_term_relationships
+0002.160 () Atomic restore: dropping original table (wp_term_relationships)
+0002.163 () Atomic restore: renaming new table (v8_term_relationships) to final table name (wp_term_relationships)
+0002.166 () Skipping this table: data in this table (wp_term_relationships) should not be search/replaced
+0002.166 () Processing table (InnoDB): pnmcr_term_taxonomy - will restore as: v8_term_taxonomy
+0002.176 () Atomic restore: dropping original table (wp_term_taxonomy)
+0002.180 () Atomic restore: renaming new table (v8_term_taxonomy) to final table name (wp_term_taxonomy)
+0002.185 () Search and replacing table: wp_term_taxonomy: rows: 13
+0002.185 () Processing table (InnoDB): pnmcr_termmeta - will restore as: v8_termmeta
+0002.193 () Atomic restore: dropping original table (wp_termmeta)
+0002.196 () Database queries processed: 100 in 2.14 seconds
+0002.196 () Atomic restore: renaming new table (v8_termmeta) to final table name (wp_termmeta)
+0002.202 () Search and replacing table: wp_termmeta: rows: 0
+0002.202 () Processing table (InnoDB): pnmcr_terms - will restore as: v8_terms
+0002.211 () Atomic restore: dropping original table (wp_terms)
+0002.214 () Atomic restore: renaming new table (v8_terms) to final table name (wp_terms)
+0002.220 () Search and replacing table: wp_terms: rows: 13
+0002.220 () Processing table (InnoDB): pnmcr_aiowps_events - will restore as: v8_aiowps_events
+0002.228 () Atomic restore: dropping original table (wp_aiowps_events)
+0002.229 () Atomic restore: renaming new table (v8_aiowps_events) to final table name (wp_aiowps_events)
+0002.234 () Search and replacing table: wp_aiowps_events: rows: 1
+0002.234 () Processing table (InnoDB): pnmcr_aiowps_failed_logins - will restore as: v8_aiowps_failed_logins
+0002.243 () Atomic restore: dropping original table (wp_aiowps_failed_logins)
+0002.243 () Atomic restore: renaming new table (v8_aiowps_failed_logins) to final table name (wp_aiowps_failed_logins)
+0002.249 () Search and replacing table: wp_aiowps_failed_logins: rows: 73
+0002.250 () Processing table (InnoDB): pnmcr_aiowps_global_meta - will restore as: v8_aiowps_global_meta
+0002.299 () Atomic restore: dropping original table (wp_aiowps_global_meta)
+0002.300 () Atomic restore: renaming new table (v8_aiowps_global_meta) to final table name (wp_aiowps_global_meta)
+0002.305 () Search and replacing table: wp_aiowps_global_meta: rows: 1
+0002.335 () Processing table (InnoDB): pnmcr_aiowps_login_activity - will restore as: v8_aiowps_login_activity
+0002.346 () Atomic restore: dropping original table (wp_aiowps_login_activity)
+0002.347 () Atomic restore: renaming new table (v8_aiowps_login_activity) to final table name (wp_aiowps_login_activity)
+0002.352 () Search and replacing table: wp_aiowps_login_activity: rows: 111
+0002.354 () Processing table (InnoDB): pnmcr_aiowps_login_lockdown - will restore as: v8_aiowps_login_lockdown
+0002.363 () Atomic restore: dropping original table (wp_aiowps_login_lockdown)
+0002.363 () Atomic restore: renaming new table (v8_aiowps_login_lockdown) to final table name (wp_aiowps_login_lockdown)
+0002.369 () Search and replacing table: wp_aiowps_login_lockdown: rows: 29
+0002.370 () Processing table (InnoDB): pnmcr_aiowps_permanent_block - will restore as: v8_aiowps_permanent_block
+0002.376 () Atomic restore: dropping original table (wp_aiowps_permanent_block)
+0002.377 () Atomic restore: renaming new table (v8_aiowps_permanent_block) to final table name (wp_aiowps_permanent_block)
+0002.382 () Search and replacing table: wp_aiowps_permanent_block: rows: 0
+0002.382 () Processing table (InnoDB): pnmcr_ewwwio_images - will restore as: v8_ewwwio_images
+0002.392 () Atomic restore: dropping original table (wp_ewwwio_images)
+0002.392 () Atomic restore: renaming new table (v8_ewwwio_images) to final table name (wp_ewwwio_images)
+0002.400 () Search and replacing table: wp_ewwwio_images: rows: 0
+0002.400 () Processing table (InnoDB): pnmcr_ewwwio_queue - will restore as: v8_ewwwio_queue
+0002.408 () Atomic restore: dropping original table (wp_ewwwio_queue)
+0002.408 () Atomic restore: renaming new table (v8_ewwwio_queue) to final table name (wp_ewwwio_queue)
+0002.414 () Search and replacing table: wp_ewwwio_queue: rows: 0
+0002.414 () Processing table (InnoDB): pnmcr_gf_draft_submissions - will restore as: v8_gf_draft_submissions
+0002.422 () Atomic restore: dropping original table (wp_gf_draft_submissions)
+0002.423 () Atomic restore: renaming new table (v8_gf_draft_submissions) to final table name (wp_gf_draft_submissions)
+0002.428 () Search and replacing table: wp_gf_draft_submissions: rows: 0
+0002.428 () Processing table (InnoDB): pnmcr_gf_entry - will restore as: v8_gf_entry
+0002.445 () Atomic restore: dropping original table (wp_gf_entry)
+0002.445 () Atomic restore: renaming new table (v8_gf_entry) to final table name (wp_gf_entry)
+0002.452 () Search and replacing table: wp_gf_entry: rows: 172
+0002.538 () Processing table (InnoDB): pnmcr_gf_entry_meta - will restore as: v8_gf_entry_meta
+0002.588 () Atomic restore: dropping original table (wp_gf_entry_meta)
+0002.589 () Atomic restore: renaming new table (v8_gf_entry_meta) to final table name (wp_gf_entry_meta)
+0002.596 () Search and replacing table: wp_gf_entry_meta: rows: 798
+0002.607 () Processing table (InnoDB): pnmcr_gf_entry_notes - will restore as: v8_gf_entry_notes
+0002.621 () Atomic restore: dropping original table (wp_gf_entry_notes)
+0002.621 () Atomic restore: renaming new table (v8_gf_entry_notes) to final table name (wp_gf_entry_notes)
+0002.627 () Search and replacing table: wp_gf_entry_notes: rows: 154
+0002.630 () Processing table (InnoDB): pnmcr_gf_form - will restore as: v8_gf_form
+0002.638 () Atomic restore: dropping original table (wp_gf_form)
+0002.638 () Atomic restore: renaming new table (v8_gf_form) to final table name (wp_gf_form)
+0002.643 () Search and replacing table: wp_gf_form: rows: 2
+0002.644 () Processing table (InnoDB): pnmcr_gf_form_meta - will restore as: v8_gf_form_meta
+0002.652 () Atomic restore: dropping original table (wp_gf_form_meta)
+0002.653 () Atomic restore: renaming new table (v8_gf_form_meta) to final table name (wp_gf_form_meta)
+0002.658 () Search and replacing table: wp_gf_form_meta: rows: 2
+0002.659 () Processing table (InnoDB): pnmcr_gf_form_revisions - will restore as: v8_gf_form_revisions
+0002.667 () Atomic restore: dropping original table (wp_gf_form_revisions)
+0002.668 () Atomic restore: renaming new table (v8_gf_form_revisions) to final table name (wp_gf_form_revisions)
+0002.674 () Search and replacing table: wp_gf_form_revisions: rows: 0
+0002.674 () Processing table (InnoDB): pnmcr_gf_form_view - will restore as: v8_gf_form_view
+0002.696 () Atomic restore: dropping original table (wp_gf_form_view)
+0002.696 () Atomic restore: renaming new table (v8_gf_form_view) to final table name (wp_gf_form_view)
+0002.701 () Search and replacing table: wp_gf_form_view: rows: 890
+0002.711 () Processing table (InnoDB): pnmcr_gf_rest_api_keys - will restore as: v8_gf_rest_api_keys
+0002.721 () Atomic restore: dropping original table (wp_gf_rest_api_keys)
+0002.722 () Atomic restore: renaming new table (v8_gf_rest_api_keys) to final table name (wp_gf_rest_api_keys)
+0002.729 () Search and replacing table: wp_gf_rest_api_keys: rows: 0
+0002.729 () Processing table (InnoDB): pnmcr_litespeed_img_optm - will restore as: v8_litespeed_img_optm
+0002.741 () Database queries processed: 150 in 2.69 seconds
+0002.743 () Atomic restore: dropping original table (wp_litespeed_img_optm)
+0002.744 () Atomic restore: renaming new table (v8_litespeed_img_optm) to final table name (wp_litespeed_img_optm)
+0002.749 () Search and replacing table: wp_litespeed_img_optm: rows: 285
+0002.753 () Processing table (InnoDB): pnmcr_litespeed_img_optming - will restore as: v8_litespeed_img_optming
+0002.763 () Atomic restore: dropping original table (wp_litespeed_img_optming)
+0002.763 () Atomic restore: renaming new table (v8_litespeed_img_optming) to final table name (wp_litespeed_img_optming)
+0002.769 () Search and replacing table: wp_litespeed_img_optming: rows: 0
+0002.769 () Processing table (InnoDB): pnmcr_smush_dir_images - will restore as: v8_smush_dir_images
+0002.778 () Atomic restore: dropping original table (wp_smush_dir_images)
+0002.779 () Atomic restore: renaming new table (v8_smush_dir_images) to final table name (wp_smush_dir_images)
+0002.785 () Search and replacing table: wp_smush_dir_images: rows: 0
+0002.785 () Processing table (InnoDB): pnmcr_wpmailsmtp_debug_events - will restore as: v8_wpmailsmtp_debug_events
+0002.793 () Atomic restore: dropping original table (wp_wpmailsmtp_debug_events)
+0002.794 () Atomic restore: renaming new table (v8_wpmailsmtp_debug_events) to final table name (wp_wpmailsmtp_debug_events)
+0002.799 () Search and replacing table: wp_wpmailsmtp_debug_events: rows: 39
+0002.819 () Processing table (InnoDB): pnmcr_wpmailsmtp_tasks_meta - will restore as: v8_wpmailsmtp_tasks_meta
+0002.826 () Atomic restore: dropping original table (wp_wpmailsmtp_tasks_meta)
+0002.826 () Atomic restore: renaming new table (v8_wpmailsmtp_tasks_meta) to final table name (wp_wpmailsmtp_tasks_meta)
+0002.832 () Search and replacing table: wp_wpmailsmtp_tasks_meta: rows: 0
+0002.832 () Processing table (InnoDB): pnmcr_yoast_indexable - will restore as: v8_yoast_indexable
+0002.851 () Atomic restore: dropping original table (wp_yoast_indexable)
+0002.852 () Atomic restore: renaming new table (v8_yoast_indexable) to final table name (wp_yoast_indexable)
+0002.861 () Search and replacing table: wp_yoast_indexable: rows: 31
+0002.877 () Processing table (InnoDB): pnmcr_yoast_indexable_hierarchy - will restore as: v8_yoast_indexable_hierarchy
+0002.887 () Atomic restore: dropping original table (wp_yoast_indexable_hierarchy)
+0002.888 () Atomic restore: renaming new table (v8_yoast_indexable_hierarchy) to final table name (wp_yoast_indexable_hierarchy)
+0002.893 () Search and replacing table: wp_yoast_indexable_hierarchy: rows: 23
+0002.894 () Processing table (InnoDB): pnmcr_yoast_migrations - will restore as: v8_yoast_migrations
+0002.902 () Atomic restore: dropping original table (wp_yoast_migrations)
+0002.903 () Atomic restore: renaming new table (v8_yoast_migrations) to final table name (wp_yoast_migrations)
+0002.908 () Search and replacing table: wp_yoast_migrations: rows: 24
+0002.908 () Processing table (InnoDB): pnmcr_yoast_primary_term - will restore as: v8_yoast_primary_term
+0002.918 () Atomic restore: dropping original table (wp_yoast_primary_term)
+0002.919 () Atomic restore: renaming new table (v8_yoast_primary_term) to final table name (wp_yoast_primary_term)
+0002.924 () Search and replacing table: wp_yoast_primary_term: rows: 15
+0002.925 () Processing table (InnoDB): pnmcr_yoast_seo_links - will restore as: v8_yoast_seo_links
+0002.935 () Atomic restore: dropping original table (wp_yoast_seo_links)
+0002.936 () Atomic restore: renaming new table (v8_yoast_seo_links) to final table name (wp_yoast_seo_links)
+0002.942 () Search and replacing table: wp_yoast_seo_links: rows: 31
+0002.951 () Processing table (InnoDB): pnmcr_yoast_seo_meta - will restore as: v8_yoast_seo_meta
+0002.958 () Unlocking database and leaving maintenance mode
+0002.958 () Disabling Maintenance mode&#8230;
+0002.958 () Atomic restore: dropping original table (wp_yoast_seo_meta)
+0002.959 () Atomic restore: renaming new table (v8_yoast_seo_meta) to final table name (wp_yoast_seo_meta)
+0002.964 () Search and replacing table: wp_yoast_seo_meta: rows: 84
+0002.965 () Finished: lines processed: 181 in 2.91 seconds
+0002.965 () Cleaning up rubbish...
+0002.965 () Begin search and replace (updraftplus_restored_db)
+0002.965 () [Database-replace-site-url] Database: search and replace site URL
+0002.966 () Restored pre-migration site ID for this installation
+0002.970 () Database search and replace: replace https://jafarsalami.co.uk in backup dump with https://jafarsalami.local
+0002.970 () Database search and replace: replace http://jafarsalami.co.uk in backup dump with https://jafarsalami.local
+0002.970 () Database search and replace: replace /home/u903386965/domains/jafarsalami.co.uk/public_html in backup dump with /Users/jafarsalami/Local Sites/jafarsalami/app/public
+0002.971 () Search and replacing table: wp_actionscheduler_actions: already done
+0002.971 () Search and replacing table: wp_actionscheduler_claims: already done
+0002.971 () Search and replacing table: wp_actionscheduler_groups: already done
+0002.971 () Search and replacing table: wp_actionscheduler_logs: already done
+0002.971 () Search and replacing table: wp_aiowps_events: already done
+0002.971 () Search and replacing table: wp_aiowps_failed_logins: already done
+0002.971 () Search and replacing table: wp_aiowps_global_meta: already done
+0002.971 () Search and replacing table: wp_aiowps_login_activity: already done
+0002.971 () Search and replacing table: wp_aiowps_login_lockdown: already done
+0002.971 () Search and replacing table: wp_aiowps_permanent_block: already done
+0002.971 () Search and replacing table: wp_commentmeta: already done
+0002.971 () Search and replacing table: wp_comments: already done
+0002.971 () Search and replacing table: wp_ewwwio_images: already done
+0002.971 () Search and replacing table: wp_ewwwio_queue: already done
+0002.972 () Search and replacing table: wp_gf_draft_submissions: already done
+0002.972 () Search and replacing table: wp_gf_entry: already done
+0002.972 () Search and replacing table: wp_gf_entry_meta: already done
+0002.972 () Search and replacing table: wp_gf_entry_notes: already done
+0002.972 () Search and replacing table: wp_gf_form: already done
+0002.972 () Search and replacing table: wp_gf_form_meta: already done
+0002.972 () Search and replacing table: wp_gf_form_revisions: already done
+0002.972 () Search and replacing table: wp_gf_form_view: already done
+0002.972 () Search and replacing table: wp_gf_rest_api_keys: already done
+0002.972 () Search and replacing table: wp_itsec_bans: already done
+0002.972 () Search and replacing table: wp_itsec_dashboard_events: already done
+0002.972 () Search and replacing table: wp_itsec_distributed_storage: already done
+0002.972 () Search and replacing table: wp_itsec_fingerprints: already done
+0002.972 () Search and replacing table: wp_itsec_geolocation_cache: already done
+0002.972 () Search and replacing table: wp_itsec_lockouts: already done
+0002.972 () Search and replacing table: wp_itsec_logs: already done
+0002.972 () Search and replacing table: wp_itsec_mutexes: already done
+0002.972 () Search and replacing table: wp_itsec_opaque_tokens: already done
+0002.972 () Search and replacing table: wp_itsec_temp: already done
+0002.972 () Search and replacing table: wp_itsec_user_groups: already done
+0002.972 () Search and replacing table: wp_links: already done
+0002.972 () Search and replacing table: wp_litespeed_img_optm: already done
+0002.972 () Search and replacing table: wp_litespeed_img_optming: already done
+0002.972 () Search and replacing table: wp_options: already done
+0002.972 () Search and replacing table: wp_postmeta: already done
+0002.972 () Search and replacing table: wp_posts: already done
+0002.972 () Search and replacing table: wp_smush_dir_images: already done
+0002.972 () Search and replacing table: wp_term_relationships: already done
+0002.972 () Search and replacing table: wp_term_taxonomy: already done
+0002.972 () Search and replacing table: wp_termmeta: already done
+0002.972 () Search and replacing table: wp_terms: already done
+0002.972 () Search and replacing table: wp_usermeta: already done
+0002.972 () Search and replacing table: wp_users: already done
+0002.972 () Search and replacing table: wp_wpmailsmtp_debug_events: already done
+0002.973 () Search and replacing table: wp_wpmailsmtp_tasks_meta: already done
+0002.973 () Search and replacing table: wp_yoast_indexable: already done
+0002.973 () Search and replacing table: wp_yoast_indexable_hierarchy: already done
+0002.973 () Search and replacing table: wp_yoast_migrations: already done
+0002.973 () Search and replacing table: wp_yoast_primary_term: already done
+0002.973 () Search and replacing table: wp_yoast_seo_links: already done
+0002.973 () Search and replacing table: wp_yoast_seo_meta: already done
+0002.976 () Entity: plugins
+0002.976 () restore_backup(backup_file=backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:72:"/Users/jafarsalami/Local Sites/jafarsalami/app/public/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0002.976 () Unpacking backup... (backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-plugins.zip, 28.1 MB)
+0002.977 () Unzipping backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-plugins.zip to /Users/jafarsalami/Local Sites/jafarsalami/app/public/wp-content/upgrade/1bc3c8f8/ using UpdraftPlus_ZipArchive, starting index 0
+0005.502 () Unzip progress: 1256 out of 8133 files (1.9 KB, plugins/advanced-custom-fields-pro/assets/inc/timepicker/jquery-ui-timepicker-addon.min.css)
+0005.813 () Unzip progress: 2257 out of 8133 files (20.5 MB, plugins/updraftplus/vendor/guzzlehttp/psr7/src/ServerRequest.php)
+0006.159 () Unzip progress: 3258 out of 8133 files (34.7 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Service/Command/ClosureCommand.php)
+0006.442 () Unzip progress: 4259 out of 8133 files (40.3 MB, plugins/better-wp-security/dist/user-groups/api.js)
+0006.849 () Unzip progress: 5260 out of 8133 files (63 MB, plugins/better-wp-security/core/admin-pages/entries/settings/pages/configure/index.php)
+0007.105 () Unzip progress: 6261 out of 8133 files (65.8 MB, plugins/wordpress-seo/src/config/migrations/20200430075614_AddIndexableObjectIdAndTypeIndex.php)
+0007.359 () Unzip progress: 7262 out of 8133 files (70 MB, plugins/optimole-wp/CHANGELOG.md)
+0007.647 () Unzip progress: 8133 out of 8133 files (83.5 MB, plugins/wordpress-seo/src/config/migrations/20200430150130_ClearIndexableTables.php)
+0007.657 () Moving old data: filesystem method / updraft_dir is potentially possible
+0007.658 () Moving old data: can potentially use wp_filesystem method / -old
+0007.658 () Moving old data out of the way...
+0008.310 () Top-level entities being moved: advanced-custom-fields-pro, autoptimize, better-wp-security, gravityforms, optimole-wp, post-types-order, taxonomy-terms-order, updraftplus, wordpress-seo, wp-mail-smtp
+0008.311 () Moving unpacked backup into place...
+0011.041 () Top-level entities being moved: advanced-custom-fields-pro, autoptimize, better-wp-security, gravityforms, optimole-wp, post-types-order, taxonomy-terms-order, updraftplus, wordpress-seo, wp-mail-smtp
+0011.044 () Cleaning up rubbish...
+0011.047 () Entity: themes
+0011.047 () restore_backup(backup_file=backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-themes.zip, type=themes, info=a:3:{s:4:"path";s:71:"/Users/jafarsalami/Local Sites/jafarsalami/app/public/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0011.047 () Unpacking backup... (backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-themes.zip, 1.2 MB)
+0011.047 () Unzipping backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-themes.zip to /Users/jafarsalami/Local Sites/jafarsalami/app/public/wp-content/upgrade/6c28528b/ using UpdraftPlus_ZipArchive, starting index 0
+0011.228 () Moving old data: filesystem method / updraft_dir is potentially possible
+0011.228 () Moving old data: can potentially use wp_filesystem method / -old
+0011.228 () Moving old data out of the way...
+0011.393 () Top-level entities being moved: jafar
+0011.393 () Moving unpacked backup into place...
+0011.487 () Top-level entities being moved: jafar
+0011.488 () Cleaning up rubbish...
+0011.490 () Entity: uploads
+0011.490 () restore_backup(backup_file=backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:72:"/Users/jafarsalami/Local Sites/jafarsalami/app/public/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=1)
+0011.490 () Unpacking backup... (backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-uploads.zip, 31.4 MB)
+0011.491 () Unzipping backup_2023-09-22-1126_Jafar_Salami_24d8979aca51-uploads.zip to /Users/jafarsalami/Local Sites/jafarsalami/app/public/wp-content/upgrade/e1e4d545/ using UpdraftPlus_ZipArchive, starting index 0
+0011.884 () Unzip progress: 476 out of 476 files (32.7 MB, uploads/2022/12/screely-1672251057841-300x153.png)
+0011.888 () Moving old data: filesystem method / updraft_dir is potentially possible
+0011.888 () Moving old data: can potentially use wp_filesystem method / -old
+0011.888 () Moving old data out of the way...
+0011.889 () Moving unpacked backup into place...
+0012.026 () Cleaning up rubbish...
+0012.053 () Restore successful!
+0012.053 () Restore successful

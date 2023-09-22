@@ -1,0 +1,16 @@
+{
+	"name": "acf/m02-portfolio-items",
+	"title": "M02 - Portfolio Items",
+	"description": "The portfolio items block.",
+	"category": "jafar-blocks",
+	"icon": "admin-comments",
+	"keywords": [
+		"portfolio",
+		"items"
+	],
+	"acf": {
+		"mode": "preview",
+		"renderTemplate": "m02-portfolio-items.php"
+	},
+	"align": "full"
+}

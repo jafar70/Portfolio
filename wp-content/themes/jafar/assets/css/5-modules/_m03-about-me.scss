@@ -1,0 +1,94 @@
+.m03 {
+  background-color: var(--bg);
+
+  &__tag {
+    text-align: center;
+
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+		@media (max-width: $desk-start){
+			flex-direction: column-reverse;
+		}
+
+		&--rev {
+			flex-direction: row-reverse;
+
+			.m03__grid__img {
+				img{
+					box-shadow: 42px 40px 0px 0px var(--bg--secondary);
+				}
+			}
+		}
+
+    &__img {
+      width: 41.666%;
+      img{
+        width: 100%;
+        box-shadow: -42px 40px 0px 0px var(--bg--secondary);
+      }
+      @media (max-width: $desk-start){
+        width: 100%;
+        margin-bottom: 30px;        
+      }
+    }
+
+    &__text {
+      width: calc(58.333% - 30px);
+      @media (max-width: $desk-start){
+        width: 100%;
+				margin-bottom: 3em;
+      }
+      p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .social-buttons a {
+        display: inline-flex;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        margin-right: 10px;
+        background-color: $red;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        transition: all .3s ease;
+        color: var(--txt);
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 15px;
+          height: 14.4px;
+          fill: $white;
+        }
+
+        &:hover {
+          background-color: darken($color: $red, $amount: 10);
+
+          svg {
+            fill: var(--txt);
+          }
+        }
+      }
+
+      .button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+

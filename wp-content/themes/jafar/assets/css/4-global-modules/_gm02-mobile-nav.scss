@@ -1,0 +1,136 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $black;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s,visibility .35s,height .35s;
+  overflow: hidden
+}
+
+
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+  z-index: 4;
+}
+
+.overlay.open li {
+  -webkit-animation: fadeIn .5s ease forwards;
+  animation: fadeIn .5s ease forwards
+}
+
+.overlay.open li:nth-of-type(1) {
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s
+}
+
+.overlay.open li:nth-of-type(2) {
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s
+}
+
+.overlay.open li:nth-of-type(3) {
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s
+}
+
+.overlay.open li:nth-of-type(4) {
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s
+}
+
+.overlay.open li:nth-of-type(5) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s
+}
+
+.overlay.open li:nth-of-type(6) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s
+}
+
+.overlay nav {
+  position: relative;
+  height: 70%;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 35px;
+  font-weight: 400;
+  text-align: center
+}
+
+@media screen and (max-width: 960px) {
+  .overlay nav {
+      top:55%
+  }
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%
+}
+
+.overlay ul li {
+  display: block;
+  height: 15%;
+  position: relative;
+  opacity: 0;
+  width: auto;
+  padding: 0;
+  margin: 0
+}
+
+@media screen and (max-width: 960px) {
+  .overlay ul li {
+      display:block;
+      height: 22%;
+      position: relative;
+      opacity: 0;
+      width: auto;
+      padding: 0;
+      margin: 0
+  }
+}
+
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 1
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0
+  }
+
+  100% {
+      opacity: 1
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn
+}

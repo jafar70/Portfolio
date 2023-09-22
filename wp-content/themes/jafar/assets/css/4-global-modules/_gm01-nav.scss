@@ -1,0 +1,231 @@
+.gm01 {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+	transition: all 0.3s ease;
+
+	&--onscroll {
+		background-color: var(--bg);
+		box-shadow: 0 3px 6px 0 var(--nav--shadow);
+	}
+
+	&--transparent{
+		background-color: transparent;
+    box-shadow: none;
+	}
+
+	.mobile-whitespace {
+		display: none;
+		@media screen and (max-width: 800px) {
+			display: block;
+		}
+	}
+
+	&__grid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&__logo {
+			cursor: pointer;
+			text-decoration: none;
+
+			h2 {
+				color: var(--txt);
+				margin: 7px 0;
+				letter-spacing: 6px;
+				font-size: 2rem;
+				font-family: $logo-font;
+				font-weight: 500;
+			}
+		}
+
+		&__menu {
+			@media screen and (max-width: 800px) {
+				display: none;
+			}
+
+			.nav {
+				&__links {
+					list-style: none;
+					display: flex;
+					margin: 0;
+					padding: 0;
+
+					li {
+						&.menu-item-object-portfolio {
+							a{
+								#body.single-portfolio &,
+								#body.page-template-page-portfolio & {
+									background-color: var(--txt);
+									color: #fff;
+								}
+							}
+						}
+						a {
+							transition: color 0.3s ease 0s;
+							padding: 1rem 1rem;
+							color: var(--txt);
+							transition: all 0.3s ease;
+							font-weight: 600;
+							text-decoration: none;
+							display: block;
+							position: relative;
+
+							&:hover {
+								
+							}
+						}
+
+						&.current-menu-item {
+							.dot-stretching {
+								opacity: 1;
+		
+								&::before {
+									transform: translate(-7px) scale(1, 1);
+								}
+		
+								&::after {
+									transform: translate(7px) scale(1, 1);
+								}
+							}
+						}
+
+						&:not(.current-menu-item):hover {
+							.dot-stretching {
+								opacity: 1;
+		
+								&::before {
+									transform: translate(-7px) scale(1, 1);
+								}
+		
+								&::after {
+									transform: translate(7px) scale(1, 1);
+								}
+							}
+						}
+
+						.dot-stretching {
+							position: absolute;
+							top: 81%;
+							left: 50%;
+							margin-right: -50%;
+							transform: translate(-50%, -50%);
+							width: 4px;
+							height: 4px;
+							border-radius: 50%;
+							background-color: $red;
+							color: $red;
+							opacity: 0;
+							transition: all 0.3s ease;
+		
+							&::before,
+							&::after {
+								content: "";
+								display: inline-block;
+								position: absolute;
+								top: 0;
+							}
+		
+							&::before {
+								width: 4px;
+								height: 4px;
+								border-radius: 50%;
+								background-color: $red;
+								color: $red;
+								transition: all 0.5s ease;
+							}
+		
+							&::after {
+								width: 4px;
+								height: 4px;
+								border-radius: 50%;
+								background-color: $red;
+								color: $red;
+								transition: all 0.5s ease;
+							}
+						}
+					}
+					@media only screen and (max-width: 800px) {
+						display: none;
+					}
+				}
+			}
+		}
+
+		&__right {
+			&.nav-right {
+				position: relative;
+
+				a {
+					text-decoration: none;
+					transition: all ease 0.2s;
+					@media screen and (max-width: 800px) {
+						display: none;
+					}
+					svg {
+						width: 20px;
+						height: 20px;
+						fill: var(--txt);
+						transition: all ease 0.2s;
+					}
+
+					&:hover {
+						svg{
+							//fill: $jafar-dark-blue;
+						}
+					}
+
+					&:not(:last-child) {
+						margin-right: 25px;
+					}
+				}
+			}
+		}
+	}
+
+	.hamburger {
+		display: inline-block;
+		cursor: pointer;
+		z-index: 999;
+		margin-top: 0;
+		position: absolute;
+		width: 40px;
+		right: 0;
+		top: 49%;
+		transform: translate(0, -50%);
+		display: none;
+
+		.bar1,
+		.bar2,
+		.bar3 {
+			width: 40px;
+			height: 4px;
+			background-color: var(--txt);
+			margin: 7px 0;
+			transition: 0.4s;
+		}
+
+		&.change {
+			.bar1 {
+				transform: rotate(-45deg) translate(-6px, 9px);
+				background-color: #fff;
+			}
+
+			.bar2 {
+				opacity: 0;
+			}
+
+			.bar3 {
+				transform: rotate(45deg) translate(-6px,-9px);
+				background-color: #fff;
+			}
+		}
+
+		@media only screen and (max-width: 800px) {
+			display: block;
+		}
+	}
+}

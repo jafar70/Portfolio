@@ -1,0 +1,31 @@
+.m09 {
+	&__grid{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+
+		&__details {
+			width: calc(50% - 20px);
+			margin: 0 10px;
+
+			@media (max-width: $desk-start) {
+				width: 100%;
+				order: 2;
+			}
+		}
+
+		&__introduction {
+			width: calc(50% - 20px);
+			margin: 0 10px;
+
+			@media (max-width: $desk-start) {
+				width: 100%;
+				order: 1;
+			}
+		}
+	}
+
+	&__subheading {
+		margin-bottom: 0.5em;
+	}
+}
