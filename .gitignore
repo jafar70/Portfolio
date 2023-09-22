@@ -16,6 +16,9 @@
 /wp-signup.php
 /wp-trackback.php
 /xmlrpc.php
+/local-xdebuginfo.php
+/wp-content/autoptimize_404_handler.php
+
 
 /wp-admin/
 /wp-includes/
@@ -23,9 +26,14 @@
 /wp-content/languages
 /wp-content/upgrade
 /wp-content/uploads
+/wp-content/uploads-old
 /wp-content/uploads-webpc
+/wp-content/ai1wm-backups
+/wp-content/cache
+/wp-content/updraft
 
 # Theme
+/wp-content/themes-old
 /wp-content/themes/twentyseventeen
 /wp-content/themes/twentynineteen
 /wp-content/themes/twentytwenty
@@ -42,7 +50,9 @@
 
 # Plugins
 /wp-content/mu-plugins/*
-/wp-content/plugins/*
+/wp-content/plugins
+/wp-content/plugins-old
+
 
 # npm & composer
 node_modules
