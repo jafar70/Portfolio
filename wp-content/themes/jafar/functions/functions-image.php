@@ -17,16 +17,16 @@
 function display_image( $image, $image_style = 'inline', $image_size = 'large', $classes = false ) {
 	if ( ! empty( $image ) ) :
 
-		$image_fullsize     = $image['url'];
-		$image_url          = $image['sizes'][ $image_size ];
+		$image_fullsize     = isset( $image['url'] ) ? $image['url'] : false;
+		$image_url          = isset( $image['sizes'][ $image_size ] ) ? $image['sizes'][ $image_size ] : false;
 		$image_size_mobile  = ( 'thumbnail' === $image_size ) ? $image_size : 'medium';
-		$image_width        = $image['sizes'][ $image_size . '-width' ];
-		$image_height       = $image['sizes'][ $image_size . '-height' ];
-		$image_url_mobile   = $image['sizes'][ $image_size_mobile ];
-		$image_width_mobile = $image['sizes'][ $image_size_mobile . '-width' ];
-		$image_caption      = $image['caption'];
-		$image_alt          = $image['alt'];
-		$image_title        = $image['title'];
+		$image_width        = isset( $image['sizes'][ $image_size . '-width' ] ) ? $image['sizes'][ $image_size . '-width' ] : false;
+		$image_height       = isset( $image['sizes'][ $image_size . '-height' ] ) ? $image['sizes'][ $image_size . '-height' ] : false;
+		$image_url_mobile   = isset( $image['sizes'][ $image_size_mobile ] ) ? $image['sizes'][ $image_size_mobile ] : false;
+		$image_width_mobile = isset( $image['sizes'][ $image_size_mobile . '-width' ] ) ? $image['sizes'][ $image_size_mobile . '-width' ] : false;
+		$image_caption      = isset( $image['caption'] ) ? $image['caption'] : false;
+		$image_alt          = isset( $image['alt'] ) ? $image['alt'] : false;
+		$image_title        = isset( $image['title'] ) ? $image['title'] : false;
 		?>
 
 <div class="image <?php echo esc_attr( $classes ); ?>">

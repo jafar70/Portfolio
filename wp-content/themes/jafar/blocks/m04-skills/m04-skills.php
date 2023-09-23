@@ -23,7 +23,7 @@ $heading    = get_field( 'm04_title' );
 	</p>
 
 	<?php if ( have_rows( 'technologies' ) ) : ?>
-		<div class='m04__grid skills-grid'>
+		<div class='m04__grid effect skills-grid'>
 			<?php
 			while ( have_rows( 'technologies' ) ) :
 				the_row();

@@ -8,6 +8,7 @@
 @import '2-helpers/functions';
 @import '2-helpers/mixins';
 @import '2-helpers/classes';
+@import '2-helpers/animations';
 
 // 3 - BASICS
 @import '3-basics/base';
@@ -37,7 +38,7 @@
 @import '5-modules/m08-page-header';
 @import '5-modules/m09-portfolio-introduction';
 @import '5-modules/m10-portfolio-text';
-
+@import '5-modules/m11-images';
 
 // 6 - PAGES
 @import '6-pages/page-home';

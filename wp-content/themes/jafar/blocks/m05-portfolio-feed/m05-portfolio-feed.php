@@ -35,17 +35,17 @@
 				while ( $results->have_posts() ) :
 					$results->the_post();
 					$heading     = get_the_title();
-					$image_id    = get_post_thumbnail_id( $post->ID );
+					$image_id    = get_post_thumbnail_id();
 					$img_url     = wp_get_attachment_url( $image_id, 'small' );
 					$image_alt   = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
 					$image_title = get_the_title( $image_id );
-					$alt_text    = get_post_meta( get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true );
+					$alt_text    = get_post_meta( get_post_thumbnail_id( get_the_ID() ), '_wp_attachment_image_alt', true );
 					$image       = array(
 						'sizes' => array( 'sm' => $img_url ),
 						'title' => $image_title,
 						'alt'   => $alt_text,
 					);
-					$categories  = get_the_terms( $post->ID , array( 'portfolio-category') );
+					$categories  = get_the_terms( get_the_ID() ,'portfolio-category' );
 					$slugs       = wp_list_pluck( $categories, 'slug' );
 					$class_names = join( ' ', $slugs );
 					?>

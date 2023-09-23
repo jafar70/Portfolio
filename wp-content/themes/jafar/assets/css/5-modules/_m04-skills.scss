@@ -15,6 +15,22 @@
 		margin: 3rem -8px 0;
 		justify-content: center;
 
+		&.effect--ready {
+			.m04__grid__item {
+				animation-duration: 1s;
+				animation-fill-mode: both;
+				opacity: 0;
+				animation-name: fadeInUp;
+				animation-delay: 0s;
+	
+				@for $i from 2 through 20 {
+					&:nth-child(#{$i}) {
+						animation-delay: #{($i * 0.1)}s;
+					}
+				}
+			}
+		}
+
 		&__item {
 			width: calc(25% - 16px);
 			margin: 0 8px 16px;
@@ -28,6 +44,7 @@
 			}
 		}
 	}
+	
 
 	&__card {
 		transition: all 0.2s ease;

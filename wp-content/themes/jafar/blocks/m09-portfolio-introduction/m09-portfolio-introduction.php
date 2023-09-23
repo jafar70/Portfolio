@@ -23,7 +23,7 @@ $intro       = get_field( 'm09_introduction' );
 
 			<div class="m09__grid__introduction">
 				<?php if ( $intro ) : ?>
-					<h3><?php echo esc_html( $intro ); ?></h3>
+					<h3 class="letters"><?php echo esc_html( $intro ); ?></h3>
 				<?php endif; ?>
 			</div>
 		</div>
