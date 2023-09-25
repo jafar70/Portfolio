@@ -1,5 +1,25 @@
 "use strict";
 
+// Lenis Smooth Scroll
+var lenis = new Lenis();
+lenis.on('scroll', function (e) {
+  console.log(e);
+});
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+
+// Split Animation
+var lettering = new Lettering('.letters');
+lettering.words();
+setTimeout(function () {
+  var effects = document.querySelectorAll(".letters");
+  effectsInit(effects, window);
+}, 200);
+"use strict";
+
 var lazyLoadInstance = new LazyLoad({
   // Your custom settings go here
 });
@@ -107,17 +127,6 @@ if (typeof portfolioList != 'undefined' && portfolioList != null) {
 }
 "use strict";
 
-var lenis = new Lenis();
-lenis.on('scroll', function (e) {
-  console.log(e);
-});
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-"use strict";
-
 /*  ==========================================================================
     Scroll effects
     ========================================================================== */
@@ -143,25 +152,5 @@ var effectsInit = function effectsInit(effects, context) {
 
 setTimeout(function () {
   var effects = document.querySelectorAll(".effect");
-  effectsInit(effects, window);
-}, 200);
-"use strict";
-
-// Lenis Smooth Scroll
-var lenis = new Lenis();
-lenis.on('scroll', function (e) {
-  console.log(e);
-});
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-
-// Split Animation
-var lettering = new Lettering('.letters');
-lettering.words();
-setTimeout(function () {
-  var effects = document.querySelectorAll(".letters");
   effectsInit(effects, window);
 }, 200);

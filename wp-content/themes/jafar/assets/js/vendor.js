@@ -781,6 +781,122 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 });
 "use strict";
 
+/*!
+ * Vanilla JS Lettering.js
+ * A vanilla JS fork of http://letteringjs.com/ by Dave Rupert
+ * (c) 2019 Chris Ferdinandi, MIT License, https://gomakethings.com
+ */
+var Lettering = function () {
+  'use strict';
+
+  /**
+   * Create the Constructor object
+   */
+  var Constructor = function Constructor(selector) {
+    //
+    // Error Checks
+    //
+
+    // Make sure a selector is provided
+    if (!selector) {
+      throw new Error('Please provide a valid selector');
+    }
+
+    //
+    // Variables
+    //
+
+    // Get all of the elements for this instantiation
+    var elems = Array.prototype.slice.call(document.querySelectorAll(selector));
+
+    // Hashed string to replace line breaks with
+    var str = 'eefec303079ad17405c889e092e105b0';
+
+    // Public APIs object
+    var publicAPIs = {};
+
+    //
+    // Methods
+    //
+
+    /**
+     * Replace line breaks in a string
+     * @param  {Node} elem The element to replace line breaks on
+     */
+    var replaceBreaks = function replaceBreaks(elem) {
+      var r = document.createTextNode(str);
+      Array.prototype.slice.call(elem.querySelectorAll('br')).forEach(function (br) {
+        elem.replaceChild(r.cloneNode(), br);
+      });
+    };
+
+    /**
+     * @return {[type]} [description]
+     */
+
+    /**
+     * Wrap each letter, word, or line in a span and add attributes
+     * @param  {Array} elems       The elements to wrap content in
+     * @param  {String}  splitStr  The string to use as the delimiter
+     * @param  {String}  className The class prefix to use for wrapped content
+     * @param  {String}  after     String to add after each item
+     * @param  {Boolean} breaks    If true, replace line breaks
+     * @return {Array}             The elements that were wrapped
+     */
+    var wrap = function wrap(elems, splitStr, className, after, breaks) {
+      elems.forEach(function (elem) {
+        var original = elem.textContent;
+        if (breaks) {
+          replaceBreaks(elem);
+        }
+        var text = elem.textContent.split(splitStr).map(function (item, index) {
+          return '<span class="' + className + (index + 1) + '" aria-hidden="true"><span>' + item + '</span></span>' + after;
+        }).join('');
+        elem.setAttribute('aria-label', original);
+        elem.innerHTML = text;
+      });
+      return elems;
+    };
+
+    /**
+     * Wrap each letter in a span and class
+     * @return {Array} The elements that were wrapped
+     */
+    publicAPIs.letters = function () {
+      return wrap(elems, '', 'char', '');
+    };
+
+    /**
+     * Wrap each word in a span and class
+     * @return {Array} The elements that were wrapped
+     */
+    publicAPIs.words = function () {
+      return wrap(elems, ' ', 'word', ' ');
+    };
+
+    /**
+     * Wrap each line in a span and class
+     * @return {Array} The elements that were wrapped
+     */
+    publicAPIs.lines = function () {
+      return wrap(elems, str, 'line', '', true);
+    };
+
+    //
+    // Return the Public APIs
+    //
+
+    return publicAPIs;
+  };
+
+  //
+  // Return the Constructor
+  //
+
+  return Constructor;
+}();
+"use strict";
+
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 /*!
 Waypoints - 4.0.0
@@ -1461,267 +1577,3 @@ https://github.com/imakewebthings/waypoints/blob/master/licenses.txt
   });
   Waypoint.Adapter = NoFrameworkAdapter;
 })();
-"use strict";
-
-function splt(_ref) {
-  var _ref$target = _ref.target,
-    e = _ref$target === void 0 ? ".splt" : _ref$target,
-    _ref$reveal = _ref.reveal,
-    t = _ref$reveal === void 0 ? !1 : _ref$reveal;
-  var l = [];
-  var n = document.querySelectorAll(e);
-  for (var _e = 0; _e < n.length; _e++) {
-    n[_e].setAttribute("id", "i" + [_e + 1]), l.push(n[_e].innerHTML);
-    var i = n[_e].innerHTML.split("");
-    for (var _l = 0; _l < i.length; _l++) {
-      var r = document.createElement("span");
-      if (n[_e].appendChild(r), r.setAttribute("id", "c" + [_l + 1]), " " == i[_l]) r.classList.add("whtSpc");else {
-        r.classList.add("char");
-        var _e2 = document.querySelectorAll(".char");
-        for (var _t = 0; _t < _e2.length; _t++) _e2[_t].style.display = "inline-block", _e2[_t].style.overflow = "hidden", _e2[_t].style.verticalAlign = "top";
-      }
-      if (1 == t) {
-        var _e3 = document.createElement("span");
-        _e3.innerHTML = i[_l], r.appendChild(_e3), _e3.setAttribute("id", "r"), _e3.classList.add("reveal");
-        var _t2 = document.querySelectorAll(".reveal");
-        for (var _e4 = 0; _e4 < _t2.length; _e4++) _t2[_e4].style.display = "inherit", _t2[_e4].style.overflow = "inherit", _t2[_e4].style.verticalAlign = "inherit";
-      } else r.innerHTML = i[_l];
-    }
-    n[_e].removeChild(n[_e].childNodes[0]);
-  }
-  splt.revert = function () {
-    for (var _e5 = 0; _e5 < n.length; _e5++) n[_e5].removeAttribute("id"), n[_e5].innerHTML = l[_e5];
-  };
-}
-"use strict";
-
-/*!
- * Vanilla JS Lettering.js
- * A vanilla JS fork of http://letteringjs.com/ by Dave Rupert
- * (c) 2019 Chris Ferdinandi, MIT License, https://gomakethings.com
- */
-var Lettering = function () {
-  'use strict';
-
-  /**
-   * Create the Constructor object
-   */
-  var Constructor = function Constructor(selector) {
-    //
-    // Error Checks
-    //
-
-    // Make sure a selector is provided
-    if (!selector) {
-      throw new Error('Please provide a valid selector');
-    }
-
-    //
-    // Variables
-    //
-
-    // Get all of the elements for this instantiation
-    var elems = Array.prototype.slice.call(document.querySelectorAll(selector));
-
-    // Hashed string to replace line breaks with
-    var str = 'eefec303079ad17405c889e092e105b0';
-
-    // Public APIs object
-    var publicAPIs = {};
-
-    //
-    // Methods
-    //
-
-    /**
-     * Replace line breaks in a string
-     * @param  {Node} elem The element to replace line breaks on
-     */
-    var replaceBreaks = function replaceBreaks(elem) {
-      var r = document.createTextNode(str);
-      Array.prototype.slice.call(elem.querySelectorAll('br')).forEach(function (br) {
-        elem.replaceChild(r.cloneNode(), br);
-      });
-    };
-
-    /**
-     * @return {[type]} [description]
-     */
-
-    /**
-     * Wrap each letter, word, or line in a span and add attributes
-     * @param  {Array} elems       The elements to wrap content in
-     * @param  {String}  splitStr  The string to use as the delimiter
-     * @param  {String}  className The class prefix to use for wrapped content
-     * @param  {String}  after     String to add after each item
-     * @param  {Boolean} breaks    If true, replace line breaks
-     * @return {Array}             The elements that were wrapped
-     */
-    var wrap = function wrap(elems, splitStr, className, after, breaks) {
-      elems.forEach(function (elem) {
-        var original = elem.textContent;
-        if (breaks) {
-          replaceBreaks(elem);
-        }
-        var text = elem.textContent.split(splitStr).map(function (item, index) {
-          return '<span class="' + className + (index + 1) + '" aria-hidden="true">' + item + '</span>' + after;
-        }).join('');
-        elem.setAttribute('aria-label', original);
-        elem.innerHTML = text;
-      });
-      return elems;
-    };
-
-    /**
-     * Wrap each letter in a span and class
-     * @return {Array} The elements that were wrapped
-     */
-    publicAPIs.letters = function () {
-      return wrap(elems, '', 'char', '');
-    };
-
-    /**
-     * Wrap each word in a span and class
-     * @return {Array} The elements that were wrapped
-     */
-    publicAPIs.words = function () {
-      return wrap(elems, ' ', 'word', ' ');
-    };
-
-    /**
-     * Wrap each line in a span and class
-     * @return {Array} The elements that were wrapped
-     */
-    publicAPIs.lines = function () {
-      return wrap(elems, str, 'line', '', true);
-    };
-
-    //
-    // Return the Public APIs
-    //
-
-    return publicAPIs;
-  };
-
-  //
-  // Return the Constructor
-  //
-
-  return Constructor;
-}();
-"use strict";
-
-/*!
- * Vanilla JS Lettering.js
- * A vanilla JS fork of http://letteringjs.com/ by Dave Rupert
- * (c) 2019 Chris Ferdinandi, MIT License, https://gomakethings.com
- */
-var Lettering = function () {
-  'use strict';
-
-  /**
-   * Create the Constructor object
-   */
-  var Constructor = function Constructor(selector) {
-    //
-    // Error Checks
-    //
-
-    // Make sure a selector is provided
-    if (!selector) {
-      throw new Error('Please provide a valid selector');
-    }
-
-    //
-    // Variables
-    //
-
-    // Get all of the elements for this instantiation
-    var elems = Array.prototype.slice.call(document.querySelectorAll(selector));
-
-    // Hashed string to replace line breaks with
-    var str = 'eefec303079ad17405c889e092e105b0';
-
-    // Public APIs object
-    var publicAPIs = {};
-
-    //
-    // Methods
-    //
-
-    /**
-     * Replace line breaks in a string
-     * @param  {Node} elem The element to replace line breaks on
-     */
-    var replaceBreaks = function replaceBreaks(elem) {
-      var r = document.createTextNode(str);
-      Array.prototype.slice.call(elem.querySelectorAll('br')).forEach(function (br) {
-        elem.replaceChild(r.cloneNode(), br);
-      });
-    };
-
-    /**
-     * @return {[type]} [description]
-     */
-
-    /**
-     * Wrap each letter, word, or line in a span and add attributes
-     * @param  {Array} elems       The elements to wrap content in
-     * @param  {String}  splitStr  The string to use as the delimiter
-     * @param  {String}  className The class prefix to use for wrapped content
-     * @param  {String}  after     String to add after each item
-     * @param  {Boolean} breaks    If true, replace line breaks
-     * @return {Array}             The elements that were wrapped
-     */
-    var wrap = function wrap(elems, splitStr, className, after, breaks) {
-      elems.forEach(function (elem) {
-        var original = elem.textContent;
-        if (breaks) {
-          replaceBreaks(elem);
-        }
-        var text = elem.textContent.split(splitStr).map(function (item, index) {
-          return '<span class="' + className + (index + 1) + '" aria-hidden="true"><span>' + item + '</span></span>' + after;
-        }).join('');
-        elem.setAttribute('aria-label', original);
-        elem.innerHTML = text;
-      });
-      return elems;
-    };
-
-    /**
-     * Wrap each letter in a span and class
-     * @return {Array} The elements that were wrapped
-     */
-    publicAPIs.letters = function () {
-      return wrap(elems, '', 'char', '');
-    };
-
-    /**
-     * Wrap each word in a span and class
-     * @return {Array} The elements that were wrapped
-     */
-    publicAPIs.words = function () {
-      return wrap(elems, ' ', 'word', ' ');
-    };
-
-    /**
-     * Wrap each line in a span and class
-     * @return {Array} The elements that were wrapped
-     */
-    publicAPIs.lines = function () {
-      return wrap(elems, str, 'line', '', true);
-    };
-
-    //
-    // Return the Public APIs
-    //
-
-    return publicAPIs;
-  };
-
-  //
-  // Return the Constructor
-  //
-
-  return Constructor;
-}();

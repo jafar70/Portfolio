@@ -15,8 +15,9 @@
 		margin: 3rem -8px 0;
 		justify-content: center;
 
-		&.effect--ready {
-			.m04__grid__item {
+		.m04__grid__item {
+			opacity: 0;
+			&.effect--ready {
 				animation-duration: 1s;
 				animation-fill-mode: both;
 				opacity: 0;
@@ -29,6 +30,7 @@
 					}
 				}
 			}
+			
 		}
 
 		&__item {

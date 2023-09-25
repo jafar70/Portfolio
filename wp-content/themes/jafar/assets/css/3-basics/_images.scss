@@ -4,6 +4,7 @@ img {
 
 .image {
 	width: 100%;
+	position: relative;
 	&__img {
 		max-width: 100%;
 		width: 100%;
@@ -30,6 +31,38 @@ img {
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: contain;
+		}
+
+		&.loaded {
+			+ .image__masks {
+				.image__masks__shade {
+					animation-name: animateIn;
+					animation-duration: 750ms;
+					animation-delay: calc(var(--animation-order) * 150ms);
+					animation-fill-mode: both;
+					animation-timing-function: cubic-bezier(0.65, 0, 0.35, 1);
+				}
+			}
+
+		}
+	}
+
+	&__masks{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		z-index: 44;
+		pointer-events: none;
+		transform: scaleY(-1);
+
+		&__shade {
+			background: var(--bg);
+			height: 100%;
+			flex: 1;
+			pointer-events: none;
 		}
 	}
 }

@@ -31,20 +31,19 @@
     span {
       overflow: visible;
       transform: translate(0, 120%);
-      transition: transform 1s cubic-bezier(0.22,1,0.36,1),-webkit-transform 1s cubic-bezier(0.22,1,0.36,1);
-    }
-    
-    @for $i from 2 through 200 {
-      &:nth-child(#{$i}) {
-        span {
-          transition-delay: #{($i * 0.1)}s;
-        }
-      }
+      transition: transform 1000ms cubic-bezier(0.22,1,0.36,1);
     }
   }
   &.effect--ready {
     opacity: 1;
     span {
+			@for $i from 2 through 200 {
+				&:nth-child(#{$i}) {
+					span {
+						transition-delay: #{($i * 0.1)}s;
+					}
+				}
+			}
       span {
         transform: translate(0, 0);
       }

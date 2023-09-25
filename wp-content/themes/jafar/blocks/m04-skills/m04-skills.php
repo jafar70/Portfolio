@@ -23,7 +23,7 @@ $heading    = get_field( 'm04_title' );
 	</p>
 
 	<?php if ( have_rows( 'technologies' ) ) : ?>
-		<div class='m04__grid effect skills-grid'>
+		<div class='m04__grid skills-grid'>
 			<?php
 			while ( have_rows( 'technologies' ) ) :
 				the_row();
@@ -32,7 +32,7 @@ $heading    = get_field( 'm04_title' );
 				$image = get_sub_field( 'technology_image' );
 				?>
 
-				<div class="m04__grid__item">
+				<div class="m04__grid__item effect">
 					<div class="m04__card">
 						<?php display_image( $image, 'inline', 'icon' ); ?>
 						<h3><?php echo esc_html( $name ); ?></h3>

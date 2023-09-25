@@ -14,7 +14,7 @@
  * @param array $image_size The size of the image.
  * @param array $classes Additional class name to be added to the image element.
  */
-function display_image( $image, $image_style = 'inline', $image_size = 'large', $classes = false ) {
+function display_image( $image, $image_style = 'inline', $image_size = 'large', $classes = false, $animation = false ) {
 	if ( ! empty( $image ) ) :
 
 		$image_fullsize     = isset( $image['url'] ) ? $image['url'] : false;
@@ -58,6 +58,16 @@ function display_image( $image, $image_style = 'inline', $image_size = 'large', 
 				<?php endif; ?>
 				alt="<?php echo esc_attr( $image_alt ); ?>" title="<?php echo esc_attr( $image_title ); ?>" width="<?php echo esc_attr( $image_width ); ?>" height="<?php echo esc_attr( $image_height ); ?>" />
 		<?php endif; ?>
+
+	<?php if ( $animation ) : ?>
+		<div class="image__masks">
+			<div class="image__masks__shade" style="--animation-order: 1;"></div>
+			<div class="image__masks__shade" style="--animation-order: 2;"></div>
+			<div class="image__masks__shade" style="--animation-order: 3;"></div>
+			<div class="image__masks__shade" style="--animation-order: 4;"></div>
+			<div class="image__masks__shade" style="--animation-order: 5;"></div>
+		</div>
+	<?php endif; ?>
 </div>
 		<?php
 		endif;

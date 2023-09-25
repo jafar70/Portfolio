@@ -28,6 +28,6 @@ if ( 'small' === $image_width ) {
 			<div class="m11__masks__shade" style="--animation-order: 4;"></div>
 			<div class="m11__masks__shade" style="--animation-order: 5;"></div>
 		</div>
-		<?php display_image( $image, 'inline', 'lg' ); ?>
+		<?php display_image( $image, 'inline', 'lg', false, true ); ?>
 	</div>
 </div>
