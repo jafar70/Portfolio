@@ -12,8 +12,6 @@
 					handler: function (direction) {
 						if (direction === "down") {
 							val.classList.add("effect--ready");
-						} else {
-							val.classList.remove("effect--ready");
 						}
 					},
 					context: context,

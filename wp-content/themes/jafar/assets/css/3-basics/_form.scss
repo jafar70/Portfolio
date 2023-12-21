@@ -7,7 +7,9 @@
 	justify-content: space-between;
 
 	input {
-		&[type=text]{
+		&[type=text],
+		&[type=email],
+		&[type=tel]{
 			width: 100%;
 			font-size: 16px;
 			padding: 8px 10px;
